@@ -24,7 +24,7 @@ Partial Class Playlist
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.Playlist_add_but = New System.Windows.Forms.Button()
+        Me.AddButton = New System.Windows.Forms.Button()
         Me.Playlist_addfolder_but = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SuspendLayout()
@@ -47,16 +47,16 @@ Partial Class Playlist
         Me.ListBox1.Size = New System.Drawing.Size(357, 290)
         Me.ListBox1.TabIndex = 1
         '
-        'Playlist_add_but
+        'AddButton
         '
-        Me.Playlist_add_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Playlist_add_but.ForeColor = System.Drawing.Color.Blue
-        Me.Playlist_add_but.Location = New System.Drawing.Point(20, 353)
-        Me.Playlist_add_but.Name = "Playlist_add_but"
-        Me.Playlist_add_but.Size = New System.Drawing.Size(102, 23)
-        Me.Playlist_add_but.TabIndex = 2
-        Me.Playlist_add_but.Text = "Добавить файл"
-        Me.Playlist_add_but.UseVisualStyleBackColor = True
+        Me.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.AddButton.ForeColor = System.Drawing.Color.Blue
+        Me.AddButton.Location = New System.Drawing.Point(20, 353)
+        Me.AddButton.Name = "AddButton"
+        Me.AddButton.Size = New System.Drawing.Size(102, 23)
+        Me.AddButton.TabIndex = 2
+        Me.AddButton.Text = "Добавить файл"
+        Me.AddButton.UseVisualStyleBackColor = True
         '
         'Playlist_addfolder_but
         '
@@ -79,7 +79,7 @@ Partial Class Playlist
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(398, 388)
         Me.Controls.Add(Me.Playlist_addfolder_but)
-        Me.Controls.Add(Me.Playlist_add_but)
+        Me.Controls.Add(Me.AddButton)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
@@ -93,7 +93,7 @@ Partial Class Playlist
 
     Friend WithEvents Label1 As Label
     Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents Playlist_add_but As Button
+    Friend WithEvents AddButton As Button
     Friend WithEvents Playlist_addfolder_but As Button
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class

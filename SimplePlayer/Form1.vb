@@ -30,4 +30,13 @@
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
+
+    Private Sub VolumeTrackBar_Scroll(sender As Object, e As EventArgs) Handles VolumeTrackBar.Scroll
+        Player.settings.volume = VolumeTrackBar.Value
+
+    End Sub
+
+    Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Player.settings.volume = VolumeTrackBar.Value
+    End Sub
 End Class
