@@ -2,6 +2,16 @@
 Imports WMPLib
 
 Public Class Edit_Playlists
+        Private Sub FindMyString(ByVal searchString As String)
+   If searchString <> String.Empty Then
+      Dim index As Integer = listBox1.FindString(searchString)
+      If index <> -1 Then
+         listBox1.SetSelected(index, True)
+      Else
+         MessageBox.Show("Нет совпадений")
+      End If
+   End If
+End Sub
     Private Sub Edit_Playlists_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If My.Settings.Playlist1_Name = "" Then
             RadioButton1.Visible = False
@@ -490,6 +500,14 @@ Public Class Edit_Playlists
     End Sub
 
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Search.Click
+        FindMyString(TextBox3.Text)
+    End Sub
+
+    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
 
     End Sub
 End Class

@@ -54,6 +54,8 @@ Partial Class Edit_Playlists
         Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Search = New System.Windows.Forms.Button()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout
         Me.TabControl1.SuspendLayout
         Me.TabPage1.SuspendLayout
@@ -267,11 +269,24 @@ Partial Class Edit_Playlists
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         resources.ApplyResources(Me.OpenFileDialog1, "OpenFileDialog1")
         '
+        'Search
+        '
+        resources.ApplyResources(Me.Search, "Search")
+        Me.Search.Name = "Search"
+        Me.Search.UseVisualStyleBackColor = true
+        '
+        'TextBox3
+        '
+        resources.ApplyResources(Me.TextBox3, "TextBox3")
+        Me.TextBox3.Name = "TextBox3"
+        '
         'Edit_Playlists
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.Search)
+        Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.GroupBox1)
@@ -287,6 +302,7 @@ Partial Class Edit_Playlists
         Me.MenuStrip1.PerformLayout
         CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
+        Me.PerformLayout
 
 End Sub
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
@@ -320,4 +336,6 @@ End Sub
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Search As Button
+    Friend WithEvents TextBox3 As TextBox
 End Class
