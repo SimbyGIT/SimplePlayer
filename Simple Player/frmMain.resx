@@ -1934,6 +1934,58 @@
   <data name="&gt;&gt;TabControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="NotifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="NotifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAGBgAAAEAIACICQAAFgAAACgAAAAYAAAAMAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAv3wTQsF9FOrCfhS0xH0VOMN/FgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwn8XgsN/GP/DgBf/xH8Y8sOA
+        GJrCgRYcwn4ZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAxIEaiMWCG//Fghr/xIEa/8SBGv/EgRrmxIEacMSBGggAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxoIciMaD
+        HP/Ggxz/xoMc/8aDHP/Ggxz/xYIb/8WCG9bFghtMxIEbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAx4UeiseFH//HhR7/x4Ue/8eFHv/HhB3/x4Qd/8aD
+        HP/Ggxz4xYIbssWCGzDEgRoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAyYceismIHv/KiB7/yYce/8mGH//Ihx7/yIUe/8iFHv/HhB3/xoMc/8WCHPLEgRuMxIEaFAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAy4oeisuJHv/KiR3/y4kd/8uJ
+        Hf/KiR3/yYge/8iHH//Hhh//yIUe/8eEHf/Ggxv/xYIb6MSBGmzDgBkIAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAy4sdisuLHf/Lix3/y4sc/8uKHf/Lih3/yokd/8qJHf/JiB3/yIYf/8iF
+        Hv/HhB3/xoIc/8WCG/zFgRrIw4AZRsKAGQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzI0bisyN
+        G//MjRv/zIwb/8yMHP/Lixz/y4sc/8uKHv/KiR3/yoge/8iGH//IhR//x4Qd/8aDHP/Fghv/w4Ea+MN/
+        GazCgBciAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzI0bis2OGv/Mjhr/zY4b/8yOG//Njhr/zI0b/8uL
+        Hf/Lihz/yokd/8uIHv/Ihh//x4Ue/8eEHf/Ggxz/xYIb/8SBGv/Dfxj0w38WiMN/FhYAAAAAAAAAAAAA
+        AAAAAAAAzY8Zis+PGf/PkBn/zo4a/82PGf/Ojhv/zY0a/8yNG//MjBz/y4od/8qKHf/JiR7/yIYf/8eF
+        Hv/HhB3/xoMc/8WCGv/DgRj/wn8X/8J+Fd7BfRJYwX0UBAAAAAAAAAAAzpEZis+RGf/PkRn/0JEY/8+Q
+        Gv/PkBr/zY8a/8yOGv/NjRv/zIwc/8uLHP/Lih3/yYge/8mGH//IhR7/x4Qc/8eDHf/EgR7/w4Aa/8N/
+        Fv/CfRT6wX0TYgAAAAAAAAAA0JEZitKSGP/Rkhf/0ZIY/9KRF//Rkhb/zpAZ/82OG//Ljh7/zY8k/8+Q
+        LP/PkzX/0ZNA/9GVSP/Rlk7/0ZZU/9CWVv/PlFf/zpJW/82QUP/IikX6xYMyWgAAAAAAAAAA155Citab
+        PP/UmTT/05gy/9OYM//TmTj/1Jo+/9edRP/Xn03/1p1T/9WdV//VnFj/1JtX/9OZV//TmVb/0phW/9GX
+        Vf/QlVb/zpNW/86SVtjMkFRSzJBSBAAAAAAAAAAA2aJZiNqkWv/apFn/2qRY/9mjWP/YoVn/16Fa/9eh
+        WP/XoFf/16BX/9afVv/VnVb/1ZxX/9SbVv/TmVf/0phV/9GXVv/QllXyzpRWgM6SVxIAAAAAAAAAAAAA
+        AAAAAAAA2aNYiNqkWf/ZpFj/2qRY/9ujWf/ZpFn/2qNZ/9miWP/YoVj/2KBX/9egVv/Wnlf/1Z1X/9Sb
+        V//Tm1X/05lX+NKYVqbRl1UeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2qRYiNqlV//apFj/26RY/9qk
+        WP/ao1j/2qRY/9qkV//Zolj/2KFY/9igV//Xn1f/1p5X/9WcV/zUm1bG05lXQtKYVgQAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA2qRYiNulVv/bpVf/26VX/9ukWP/apFj/2qNY/9qkWP/Zolf/2aJY/9eh
+        Vv/XoFb/1p5X5tWdV2rVnFcIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2qRXiNum
+        Vv/bplb/26VW/9qlV//bpVf/2qRX/9qjWP/ao1j/2aJY/9ihWPTXoFeM16BXEgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2qRXhtulWP/bplj/26ZX/9ulVv/bpVf/26VY/9qj
+        WP/ao1j62aJYtNihWDLYolkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA2qNYhNumWP/cplf/3KVY/9umV//apVb/26VX/9qjWNrbpFlQ2qNYBAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2qRYgtulWP/bplf/26VY/9uk
+        WP/bpFjo26RYeNujWQoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA2aFYfNmiWP/Zolf/2aJX9tmiWaLao1gg3KVcAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1Z1WNNWd
+        VuDVnVa81p9WQNagVgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADP//8Ag///AIH//wCAf/8AgB//AIAH/wCAA/8AgAD/AIAA
+        PwCAAA8AgAAHAIAAAwCAAAMAgAAHAIAADwCAAD8AgAD/AIAD/wCAB/8AgB//AIB//wCB//8Aw///AM//
+        /wA=
+</value>
+  </data>
+  <data name="NotifyIcon1.Text" xml:space="preserve">
+    <value>Simple Player</value>
+  </data>
   <metadata name="VisualStyler1.VisualStyle" xml:space="preserve">
     <value>OSX (Aqua).vssf</value>
   </metadata>
@@ -4651,17 +4703,17 @@
   <data name="&gt;&gt;AboutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;VisualStyler1.Name" xml:space="preserve">
-    <value>VisualStyler1</value>
-  </data>
-  <data name="&gt;&gt;VisualStyler1.Type" xml:space="preserve">
-    <value>SkinSoft.VisualStyler.VisualStyler, SkinSoft.VisualStyler, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0fda9f423e1d9830</value>
-  </data>
   <data name="&gt;&gt;NotifyIcon1.Name" xml:space="preserve">
     <value>NotifyIcon1</value>
   </data>
   <data name="&gt;&gt;NotifyIcon1.Type" xml:space="preserve">
     <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;VisualStyler1.Name" xml:space="preserve">
+    <value>VisualStyler1</value>
+  </data>
+  <data name="&gt;&gt;VisualStyler1.Type" xml:space="preserve">
+    <value>SkinSoft.VisualStyler.VisualStyler, SkinSoft.VisualStyler, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0fda9f423e1d9830</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmMain</value>
@@ -7293,57 +7345,5 @@
         QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQT09PC9EYXRhPg0KICA8L0ltYWdlPg0KPC9T
         a2luPgs=
 </value>
-  </data>
-  <metadata name="NotifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <data name="NotifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAGBgAAAEAIACICQAAFgAAACgAAAAYAAAAMAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAv3wTQsF9FOrCfhS0xH0VOMN/FgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwn8XgsN/GP/DgBf/xH8Y8sOA
-        GJrCgRYcwn4ZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAxIEaiMWCG//Fghr/xIEa/8SBGv/EgRrmxIEacMSBGggAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxoIciMaD
-        HP/Ggxz/xoMc/8aDHP/Ggxz/xYIb/8WCG9bFghtMxIEbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAx4UeiseFH//HhR7/x4Ue/8eFHv/HhB3/x4Qd/8aD
-        HP/Ggxz4xYIbssWCGzDEgRoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAyYceismIHv/KiB7/yYce/8mGH//Ihx7/yIUe/8iFHv/HhB3/xoMc/8WCHPLEgRuMxIEaFAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAy4oeisuJHv/KiR3/y4kd/8uJ
-        Hf/KiR3/yYge/8iHH//Hhh//yIUe/8eEHf/Ggxv/xYIb6MSBGmzDgBkIAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAy4sdisuLHf/Lix3/y4sc/8uKHf/Lih3/yokd/8qJHf/JiB3/yIYf/8iF
-        Hv/HhB3/xoIc/8WCG/zFgRrIw4AZRsKAGQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzI0bisyN
-        G//MjRv/zIwb/8yMHP/Lixz/y4sc/8uKHv/KiR3/yoge/8iGH//IhR//x4Qd/8aDHP/Fghv/w4Ea+MN/
-        GazCgBciAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzI0bis2OGv/Mjhr/zY4b/8yOG//Njhr/zI0b/8uL
-        Hf/Lihz/yokd/8uIHv/Ihh//x4Ue/8eEHf/Ggxz/xYIb/8SBGv/Dfxj0w38WiMN/FhYAAAAAAAAAAAAA
-        AAAAAAAAzY8Zis+PGf/PkBn/zo4a/82PGf/Ojhv/zY0a/8yNG//MjBz/y4od/8qKHf/JiR7/yIYf/8eF
-        Hv/HhB3/xoMc/8WCGv/DgRj/wn8X/8J+Fd7BfRJYwX0UBAAAAAAAAAAAzpEZis+RGf/PkRn/0JEY/8+Q
-        Gv/PkBr/zY8a/8yOGv/NjRv/zIwc/8uLHP/Lih3/yYge/8mGH//IhR7/x4Qc/8eDHf/EgR7/w4Aa/8N/
-        Fv/CfRT6wX0TYgAAAAAAAAAA0JEZitKSGP/Rkhf/0ZIY/9KRF//Rkhb/zpAZ/82OG//Ljh7/zY8k/8+Q
-        LP/PkzX/0ZNA/9GVSP/Rlk7/0ZZU/9CWVv/PlFf/zpJW/82QUP/IikX6xYMyWgAAAAAAAAAA155Citab
-        PP/UmTT/05gy/9OYM//TmTj/1Jo+/9edRP/Xn03/1p1T/9WdV//VnFj/1JtX/9OZV//TmVb/0phW/9GX
-        Vf/QlVb/zpNW/86SVtjMkFRSzJBSBAAAAAAAAAAA2aJZiNqkWv/apFn/2qRY/9mjWP/YoVn/16Fa/9eh
-        WP/XoFf/16BX/9afVv/VnVb/1ZxX/9SbVv/TmVf/0phV/9GXVv/QllXyzpRWgM6SVxIAAAAAAAAAAAAA
-        AAAAAAAA2aNYiNqkWf/ZpFj/2qRY/9ujWf/ZpFn/2qNZ/9miWP/YoVj/2KBX/9egVv/Wnlf/1Z1X/9Sb
-        V//Tm1X/05lX+NKYVqbRl1UeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2qRYiNqlV//apFj/26RY/9qk
-        WP/ao1j/2qRY/9qkV//Zolj/2KFY/9igV//Xn1f/1p5X/9WcV/zUm1bG05lXQtKYVgQAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAA2qRYiNulVv/bpVf/26VX/9ukWP/apFj/2qNY/9qkWP/Zolf/2aJY/9eh
-        Vv/XoFb/1p5X5tWdV2rVnFcIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2qRXiNum
-        Vv/bplb/26VW/9qlV//bpVf/2qRX/9qjWP/ao1j/2aJY/9ihWPTXoFeM16BXEgAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2qRXhtulWP/bplj/26ZX/9ulVv/bpVf/26VY/9qj
-        WP/ao1j62aJYtNihWDLYolkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAA2qNYhNumWP/cplf/3KVY/9umV//apVb/26VX/9qjWNrbpFlQ2qNYBAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2qRYgtulWP/bplf/26VY/9uk
-        WP/bpFjo26RYeNujWQoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAA2aFYfNmiWP/Zolf/2aJX9tmiWaLao1gg3KVcAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1Z1WNNWd
-        VuDVnVa81p9WQNagVgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADP//8Ag///AIH//wCAf/8AgB//AIAH/wCAA/8AgAD/AIAA
-        PwCAAA8AgAAHAIAAAwCAAAMAgAAHAIAADwCAAD8AgAD/AIAD/wCAB/8AgB//AIB//wCB//8Aw///AM//
-        /wA=
-</value>
-  </data>
-  <data name="NotifyIcon1.Text" xml:space="preserve">
-    <value>Simple Player</value>
   </data>
 </root>

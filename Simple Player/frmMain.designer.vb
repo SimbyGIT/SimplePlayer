@@ -30,6 +30,7 @@ Partial Class frmMain
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -74,9 +75,8 @@ Partial Class frmMain
         Me.ListBox3 = New System.Windows.Forms.ListBox()
         Me.ListBox4 = New System.Windows.Forms.ListBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
         Me.TabPage1.SuspendLayout
         CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
@@ -109,6 +109,12 @@ Partial Class frmMain
         resources.ApplyResources(Me.TabPage1, "TabPage1")
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.UseVisualStyleBackColor = true
+        '
+        'Button8
+        '
+        resources.ApplyResources(Me.Button8, "Button8")
+        Me.Button8.Name = "Button8"
+        Me.Button8.UseVisualStyleBackColor = true
         '
         'Button7
         '
@@ -385,24 +391,19 @@ Partial Class frmMain
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         '
-        'VisualStyler1
-        '
-        Me.VisualStyler1.HostForm = Me
-        Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"),SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
-        Me.VisualStyler1.ShadowStyle = SkinSoft.VisualStyler.ShadowStyle.Bold
-        Me.VisualStyler1.ToolStripStyle = SkinSoft.VisualStyler.ToolStripRenderStyle.OfficeAuto
-        Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Aqua).vssf")
-        '
         'NotifyIcon1
         '
         Me.NotifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
         resources.ApplyResources(Me.NotifyIcon1, "NotifyIcon1")
         '
-        'Button8
+        'VisualStyler1
         '
-        resources.ApplyResources(Me.Button8, "Button8")
-        Me.Button8.Name = "Button8"
-        Me.Button8.UseVisualStyleBackColor = true
+        Me.VisualStyler1.HookVisualStyles = true
+        Me.VisualStyler1.HostForm = Me
+        Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"),SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
+        Me.VisualStyler1.ShadowStyle = SkinSoft.VisualStyler.ShadowStyle.Bold
+        Me.VisualStyler1.ToolStripStyle = SkinSoft.VisualStyler.ToolStripRenderStyle.Professional
+        Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Aqua).vssf")
         '
         'frmMain
         '
@@ -477,7 +478,7 @@ End Sub
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Button7 As Button
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents Button8 As Button
+    Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
 End Class
