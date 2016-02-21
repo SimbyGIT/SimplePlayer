@@ -6,6 +6,7 @@ Public Class Radio_Player_X10
     Dim station As String
 
     Private Sub Radio_Player_X10_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Opacity = My.Settings.Opacity
         AxWindowsMediaPlayer1.settings.volume = My.Settings.Volume
     End Sub
 

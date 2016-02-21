@@ -8,13 +8,13 @@ Public Class Settings
     End Sub
 
 
-    Private Sub Button8_Click_1(sender As Object, e As EventArgs) Handles Button8.Click
+    Private Sub Button8_Click_1(sender As Object, e As EventArgs) Handles Button8.Click 
         Edit_Playlists.Show()
     End Sub
 
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        HScrollBar1.Value = 100
-
+        HScrollBar1.Value = My.Settings.Opacity * 100
+        Me.Opacity = My.Settings.Opacity
         If My.Settings.Skin = True Then
             CheckBox1.Checked =True 'Проверка на галочку для применения скина
             Else 
@@ -43,7 +43,10 @@ Public Class Settings
     End Sub
 
     Private Sub HScrollBar1_Scroll(sender As Object, e As ScrollEventArgs) Handles HScrollBar1.Scroll
-        My.Settings.Opacity = HScrollBar1.Value
-        Opacity = HScrollBar1.Value
+        My.Settings.Opacity = HScrollBar1.Value /100
+        Opacity = HScrollBar1.Value / 100
+        frmMain.Opacity = HScrollBar1.Value / 100
+         Volume.Opacity = HScrollBar1.Value / 100
+        Radio_Player_X10.Opacity = HScrollBar1.Value / 100
     End Sub
 End Class

@@ -10,6 +10,7 @@
     End Sub
 
     Private Sub Volume_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Opacity = My.Settings.Opacity
         TrackBar1.Value = My.Settings.Volume
         frmMain.AxWindowsMediaPlayer1.settings.volume = TrackBar1.Value
         Radio_Player_X10.AxWindowsMediaPlayer1.settings.volume = TrackBar1.Value

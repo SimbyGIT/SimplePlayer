@@ -320,7 +320,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("100")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
         Public Property Opacity() As Double
             Get
                 Return CType(Me("Opacity"),Double)
