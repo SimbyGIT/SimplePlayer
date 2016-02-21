@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="GroupBox1.Text" xml:space="preserve">
-    <value>Плейлисты</value>
-  </data>
   <data name="Button4.Text" xml:space="preserve">
     <value>Сохранить плейлист</value>
   </data>
@@ -128,6 +125,9 @@
   </data>
   <data name="Button1.Text" xml:space="preserve">
     <value>Редактировать выбраный плелист</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>Плейлисты</value>
   </data>
   <data name="TabPage1.Text" xml:space="preserve">
     <value>Опции плелиста</value>

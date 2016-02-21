@@ -13,6 +13,8 @@ Public Class Settings
     End Sub
 
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        HScrollBar1.Value = 100
+
         If My.Settings.Skin = True Then
             CheckBox1.Checked =True 'Проверка на галочку для применения скина
             Else 
@@ -38,5 +40,10 @@ Public Class Settings
             Else 
             My.Settings.Skin = False
         End If
+    End Sub
+
+    Private Sub HScrollBar1_Scroll(sender As Object, e As ScrollEventArgs) Handles HScrollBar1.Scroll
+        My.Settings.Opacity = HScrollBar1.Value
+        Opacity = HScrollBar1.Value
     End Sub
 End Class

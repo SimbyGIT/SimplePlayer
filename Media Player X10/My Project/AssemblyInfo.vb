@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Simple Player")>
-<Assembly: AssemblyDescription("Fast And Easy To Use Media Player With Lots Of Helpful Tools")>
-<Assembly: AssemblyCompany("Prydec Software - (Craig Pryde)")>
+<Assembly: AssemblyDescription("Простой , удобный , быстрый музыкальный плеер. С поддержкой плейлистов, скинов.")>
+<Assembly: AssemblyCompany("Dream Team")>
 <Assembly: AssemblyProduct("Simple Player")>
-<Assembly: AssemblyCopyright("Copyright ©  2012")>
-<Assembly: AssemblyTrademark("Prydec Software")>
+<Assembly: AssemblyCopyright("Copyright ©  2016")>
+<Assembly: AssemblyTrademark("DreamTeam")>
 
 <Assembly: ComVisible(False)>
 
@@ -30,5 +30,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("2.0.0.0")>
+<Assembly: AssemblyFileVersion("2.0.0.0")>

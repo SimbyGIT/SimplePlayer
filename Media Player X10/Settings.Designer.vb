@@ -32,6 +32,8 @@ Partial Class Settings
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.HScrollBar1 = New System.Windows.Forms.HScrollBar()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage2.SuspendLayout
         Me.GroupBox7.SuspendLayout
         Me.TabControl1.SuspendLayout
@@ -76,6 +78,8 @@ Partial Class Settings
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.Label1)
+        Me.TabPage1.Controls.Add(Me.HScrollBar1)
         Me.TabPage1.Controls.Add(Me.CheckBox1)
         Me.TabPage1.Controls.Add(Me.Button2)
         Me.TabPage1.Controls.Add(Me.Button1)
@@ -100,6 +104,17 @@ Partial Class Settings
         resources.ApplyResources(Me.CheckBox1, "CheckBox1")
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.UseVisualStyleBackColor = true
+        '
+        'HScrollBar1
+        '
+        resources.ApplyResources(Me.HScrollBar1, "HScrollBar1")
+        Me.HScrollBar1.Name = "HScrollBar1"
+        Me.HScrollBar1.Value = 100
+        '
+        'Label1
+        '
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Name = "Label1"
         '
         'Settings
         '
@@ -129,4 +144,6 @@ End Sub
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents HScrollBar1 As HScrollBar
 End Class

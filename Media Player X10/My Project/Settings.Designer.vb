@@ -317,6 +317,18 @@ Namespace My
                 Me("Skin") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("100")>  _
+        Public Property Opacity() As Double
+            Get
+                Return CType(Me("Opacity"),Double)
+            End Get
+            Set
+                Me("Opacity") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

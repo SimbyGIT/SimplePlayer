@@ -51,7 +51,7 @@ Public Class Edit_Playlists
         If _
             My.Settings.Playlist1_Name = "" And My.Settings.Playlist2_Name = "" And My.Settings.Playlist3_Name = "" And
             My.Settings.Playlist4_Name = "" Then
-            MsgBox("No Playlist's Are Available Available. Please Create A Playlist Before Using This Feature")
+            MsgBox("Нет плейлистов. Создайте плейлист")
             Me.Close()
 
         End If
@@ -178,7 +178,7 @@ Public Class Edit_Playlists
     Private Sub AddSongsToolStripMenuItem_Click(sender As Object, e As EventArgs) _
         Handles AddSongsToolStripMenuItem.Click
         OpenFileDialog1.Filter =
-            "Audio Files(*.wav,*.mp3,*.mpeg,*.snd,*.au,*.aif,*.aifc,*.aiff,*.wma)|*.wav;*.mp3;*.mpeg;*.m4a;*.snd;*.au;*.aif;*.aifc;*.aiff;*.wma"
+            "Аудио Файлы(*.wav,*.mp3,*.mpeg,*.snd,*.au,*.aif,*.aifc,*.aiff,*.wma)|*.wav;*.mp3;*.mpeg;*.m4a;*.snd;*.au;*.aif;*.aifc;*.aiff;*.wma"
         OpenFileDialog1.FileName = ""
 
         Try
@@ -383,14 +383,14 @@ Public Class Edit_Playlists
             RadioButton1.Checked = False And RadioButton2.Checked = False And RadioButton3.Checked = False And
             RadioButton4.Checked = False Then
             MsgBox(
-                "Please Select A Playlist Before Pressing Delete. If No Playlists Are Availiable Please Close This Feature And Create A Playlist")
+                "Выберите плейлист прежде чем удалять")
 
         End If
     End Sub
 
     Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles Button4.Click
         If TextBox1.Text = "" Then
-            MsgBox("Please Enter A Playlist Name Before Saving")
+            MsgBox("Введите имя плейлиста , прежде чем сохранять")
         Else
 
 
@@ -474,7 +474,7 @@ Public Class Edit_Playlists
                 Next
                 a.Close()
 
-                MsgBox("Saved")
+                MsgBox("Сохранено")
                 My.Settings.Playlist4_User_Imput_Name = TextBox1.Text
                 RadioButton4.Text = My.Settings.Playlist4_User_Imput_Name
                 frmMain.Playlist4ToolStripMenuItem.Text = My.Settings.Playlist4_User_Imput_Name
@@ -483,9 +483,13 @@ Public Class Edit_Playlists
             If _
                 RadioButton1.Checked = False And RadioButton2.Checked = False And RadioButton3.Checked = False And
                 RadioButton4.Checked = False Then
-                MsgBox("Please Select And Edit A Playlist Before Saving")
+                MsgBox("Выберите и отредактируйте плейлист, прежде чем сохранять")
             End If
 
         End If
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class

@@ -255,13 +255,16 @@ Public Class frmMain
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click 
-        End
+Me.Close()
+
     End Sub
 
     Private Sub frmMain_Leave(sender As Object, e As EventArgs) Handles Me.Leave
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Opacity = 44
+
         If My.Settings.Skin = True then
             VisualStyler.RestoreApplicationSkin()
             Else 
@@ -516,6 +519,19 @@ Public Class frmMain
 
     Private Sub PlayerOptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PlayerOptionsToolStripMenuItem.Click _
         
+    End Sub
+
+    Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        AboutBox1.Show()
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        AxWindowsMediaPlayer1.Ctlcontrols.pause()
     End Sub
 End Class
 
