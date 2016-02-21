@@ -68,78 +68,6 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
-        Public Property Agree_Ment() As Boolean
-            Get
-                Return CType(Me("Agree_Ment"),Boolean)
-            End Get
-            Set
-                Me("Agree_Ment") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-        Public Property UserName() As String
-            Get
-                Return CType(Me("UserName"),String)
-            End Get
-            Set
-                Me("UserName") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-        Public Property Password() As String
-            Get
-                Return CType(Me("Password"),String)
-            End Get
-            Set
-                Me("Password") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property Recovery_Code() As String
-            Get
-                Return CType(Me("Recovery_Code"),String)
-            End Get
-            Set
-                Me("Recovery_Code") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
-        Public Property Show_Login() As Boolean
-            Get
-                Return CType(Me("Show_Login"),Boolean)
-            End Get
-            Set
-                Me("Show_Login") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
-        Public Property Remember_login() As Boolean
-            Get
-                Return CType(Me("Remember_login"),Boolean)
-            End Get
-            Set
-                Me("Remember_login") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
         Public Property Created() As Boolean
             Get
@@ -183,18 +111,6 @@ Namespace My
             End Get
             Set
                 Me("Beta_Button") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
-        Public Property Show_Login_At_Vault() As Boolean
-            Get
-                Return CType(Me("Show_Login_At_Vault"),Boolean)
-            End Get
-            Set
-                Me("Show_Login_At_Vault") = value
             End Set
         End Property
         
@@ -327,6 +243,18 @@ Namespace My
             End Get
             Set
                 Me("Opacity") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+        Public Property Notify() As Boolean
+            Get
+                Return CType(Me("Notify"),Boolean)
+            End Get
+            Set
+                Me("Notify") = value
             End Set
         End Property
     End Class

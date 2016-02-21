@@ -26,7 +26,6 @@ Partial Class frmMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.OpenFileDialog2 = New System.Windows.Forms.OpenFileDialog()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
@@ -76,6 +75,7 @@ Partial Class frmMain
         Me.ListBox4 = New System.Windows.Forms.ListBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.TabPage1.SuspendLayout
         CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
@@ -88,10 +88,6 @@ Partial Class frmMain
         '
         'Timer1
         '
-        '
-        'NotifyIcon1
-        '
-        resources.ApplyResources(Me.NotifyIcon1, "NotifyIcon1")
         '
         'TabPage1
         '
@@ -389,11 +385,16 @@ Partial Class frmMain
         '
         'VisualStyler1
         '
-        Me.VisualStyler1.HookVisualStyles = true
         Me.VisualStyler1.HostForm = Me
         Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"),SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
+        Me.VisualStyler1.ShadowStyle = SkinSoft.VisualStyler.ShadowStyle.Bold
         Me.VisualStyler1.ToolStripStyle = SkinSoft.VisualStyler.ToolStripRenderStyle.OfficeAuto
-        Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Aqua).vssf")
+        Me.VisualStyler1.LoadVisualStyle(Nothing, "EarthCG (Gradient1).vssf")
+        '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
+        resources.ApplyResources(Me.NotifyIcon1, "NotifyIcon1")
         '
         'frmMain
         '
@@ -420,7 +421,6 @@ Partial Class frmMain
 End Sub
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
     Friend WithEvents OpenFileDialog2 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
@@ -470,4 +470,5 @@ End Sub
     Friend WithEvents Button7 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
+    Friend WithEvents NotifyIcon1 As NotifyIcon
 End Class

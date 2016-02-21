@@ -14,7 +14,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyCopyright("Copyright ©  2016")>
 <Assembly: AssemblyTrademark("DreamTeam")>
 
-<Assembly: ComVisible(False)>
+<Assembly: ComVisible(true)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("db55c46b-8ddd-40f5-a846-6f16687d8950")>

@@ -65,22 +65,25 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Windows Media Player alt.ico</ApplicationIcon>
+    <ApplicationIcon>play-24.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>78CDF116F806778D1EACEBB67E7BE888D54ABF8B</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>6AAD30552820F0B55140D6C27415BA2C0C65A61A</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Media Player X10_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>Simple Player_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SkinSoft.VisualStyler, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0fda9f423e1d9830, processorArchitecture=MSIL" />
@@ -108,6 +111,7 @@
     <Compile Include="AboutBox1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Create_or_Save_Playlist.Designer.vb">
       <DependentUpon>Create_or_Save_Playlist.vb</DependentUpon>
     </Compile>
@@ -154,6 +158,7 @@
     <Compile Include="Settings.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Settings1.vb" />
     <Compile Include="Volume.Designer.vb">
       <DependentUpon>Volume.vb</DependentUpon>
     </Compile>
@@ -220,6 +225,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Simple Player_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">
@@ -263,6 +269,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="play-24.ico" />
     <Content Include="Windows Media Player alt.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

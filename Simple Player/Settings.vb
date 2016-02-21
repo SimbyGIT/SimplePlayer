@@ -15,11 +15,12 @@ Public Class Settings
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         HScrollBar1.Value = My.Settings.Opacity * 100
         Me.Opacity = My.Settings.Opacity
+        CheckBox2.Checked = My.Settings.Notify
         If My.Settings.Skin = True Then
             CheckBox1.Checked =True 'Проверка на галочку для применения скина
             Else 
              CheckBox1.Checked =False
-        End If
+            End If
     End Sub
 
     Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
@@ -48,5 +49,13 @@ Public Class Settings
         frmMain.Opacity = HScrollBar1.Value / 100
          Volume.Opacity = HScrollBar1.Value / 100
         Radio_Player_X10.Opacity = HScrollBar1.Value / 100
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+        If CheckBox2.Checked = True Then
+            My.Settings.Notify = True
+            Else 
+            My.Settings.Notify = False
+        End If
     End Sub
 End Class
