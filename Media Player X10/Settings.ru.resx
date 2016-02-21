@@ -126,4 +126,7 @@
   <data name="TabPage2.Text" xml:space="preserve">
     <value>Общие параметры</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
 </root>

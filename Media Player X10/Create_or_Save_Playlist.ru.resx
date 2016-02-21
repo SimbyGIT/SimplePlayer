@@ -183,6 +183,9 @@
   <data name="ImportSongsToolStripMenuItem.Text" xml:space="preserve">
     <value>Импорт треков</value>
   </data>
+  <data name="ToolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 6</value>
+  </data>
   <data name="AddMusicPlayerPlaylistToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -242,6 +245,9 @@
   <data name="AddMusicPlayerPlaylistToolStripMenuItem.Text" xml:space="preserve">
     <value>Добавить плейлист</value>
   </data>
+  <data name="ToolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 6</value>
+  </data>
   <data name="DeleteSelectedItemToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -299,6 +305,9 @@
   </data>
   <data name="DeleteSelectedItemToolStripMenuItem.Text" xml:space="preserve">
     <value>Удалить выбранный трек</value>
+  </data>
+  <data name="ToolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 6</value>
   </data>
   <data name="EmptyPlaylistToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -849,5 +858,8 @@
         aQBiAGwAZQAAAAsAAAALAAAACwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAA
         AAALAAAAFRgAADQDAAAL
 </value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Создание плейлиста</value>
   </data>
 </root>
