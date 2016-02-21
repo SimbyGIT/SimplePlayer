@@ -1,4 +1,5 @@
-﻿Imports SkinSoft.VisualStyler
+﻿Imports Simple_Player.My
+Imports SkinSoft.VisualStyler
 Imports SkinSoft.VisualStyler.Licensing
 
 Public Class Settings
@@ -12,6 +13,11 @@ Public Class Settings
     End Sub
 
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If My.Settings.Skin = True Then
+            CheckBox1.Checked =True 'Проверка на галочку для применения скина
+            Else 
+             CheckBox1.Checked =False
+        End If
     End Sub
 
     Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
@@ -24,5 +30,13 @@ Public Class Settings
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
          VisualStyler.RestoreApplicationSkin()
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked Then
+            My.Settings.Skin = True
+            Else 
+            My.Settings.Skin = False
+        End If
     End Sub
 End Class
