@@ -1188,6 +1188,23 @@
   <data name="Button18.Text" xml:space="preserve">
     <value>Назад</value>
   </data>
+  <data name="Button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAEaSURBVDhPtdMxS4JBHMfxI0IcHaRJQqLRKSQiREScHCMcehUNDiIRNERDo4ivw6EXIA7iIM0S
+        IU0iEhEiEiL2/Z1P+vjY49NgP/jAndz97+650/xnEqgumsvsOQJzgiGmtrfKA7o4sz2fnOIDc8z0g5Mc
+        YqhhjAw2osqf0GRvgRZ6OMIj+ojAFHCNMtyTfwocIo0wntBBCC8owUzgnuSmAlf4wi0OoPE6jhZsI7CA
+        cgmN20cDWjkPfas/FbiAxmnrKqDVVUBHDiygb6Qxd4g6bR1Bu7BH0BmLuMEI3gJxZKHV63h22noP2sla
+        UvC7xibecIx7DGCv0Ru9hW0PqQIdQ7vyTRLv+O0pv+Lc9gKiP5OerTu6RtlVjPkGrnhlVihsd/0AAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="Button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 243</value>
+  </data>
+  <data name="Button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 23</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAAAAAAAEAIAALOQAAZgAAAICAAAABACAAKAgBAHE5AABgYAAAAQAgAKiUAACZQQEAQEAAAAEA
