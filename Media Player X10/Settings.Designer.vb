@@ -29,9 +29,13 @@ Partial Class Settings
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.TabPage2.SuspendLayout
         Me.GroupBox7.SuspendLayout
         Me.TabControl1.SuspendLayout
+        Me.TabPage1.SuspendLayout
         Me.SuspendLayout
         '
         'Button3
@@ -72,8 +76,29 @@ Partial Class Settings
         '
         resources.ApplyResources(Me.TabControl1, "TabControl1")
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
+        '
+        'TabPage1
+        '
+        resources.ApplyResources(Me.TabPage1, "TabPage1")
+        Me.TabPage1.Controls.Add(Me.Button2)
+        Me.TabPage1.Controls.Add(Me.Button1)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.UseVisualStyleBackColor = true
+        '
+        'Button2
+        '
+        resources.ApplyResources(Me.Button2, "Button2")
+        Me.Button2.Name = "Button2"
+        Me.Button2.UseVisualStyleBackColor = true
+        '
+        'Button1
+        '
+        resources.ApplyResources(Me.Button1, "Button1")
+        Me.Button1.Name = "Button1"
+        Me.Button1.UseVisualStyleBackColor = true
         '
         'Settings
         '
@@ -90,6 +115,7 @@ Partial Class Settings
         Me.TabPage2.ResumeLayout(false)
         Me.GroupBox7.ResumeLayout(false)
         Me.TabControl1.ResumeLayout(false)
+        Me.TabPage1.ResumeLayout(false)
         Me.ResumeLayout(false)
 
 End Sub
@@ -99,4 +125,7 @@ End Sub
     Friend WithEvents GroupBox7 As GroupBox
     Friend WithEvents Button8 As Button
     Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
 End Class

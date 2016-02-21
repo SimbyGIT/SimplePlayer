@@ -117,11 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Button3.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Button14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 71</value>
+  </data>
   <data name="Button17.Location" type="System.Drawing.Point, System.Drawing">
     <value>506, 207</value>
   </data>
@@ -138,6 +137,7 @@
   <data name="&gt;&gt;Button13.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="AxWindowsMediaPlayer1.Enabled" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -280,6 +280,9 @@
     <value>308, 51</value>
   </data>
   <data name="&gt;&gt;Button13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button12.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Button9.Name" xml:space="preserve">
@@ -444,6 +447,9 @@
   <data name="&gt;&gt;Button4.Name" xml:space="preserve">
     <value>Button4</value>
   </data>
+  <data name="&gt;&gt;Button7.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
   <data name="&gt;&gt;Button4.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
@@ -452,6 +458,9 @@
   </data>
   <data name="&gt;&gt;Button12.Name" xml:space="preserve">
     <value>Button12</value>
+  </data>
+  <data name="&gt;&gt;Button18.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="Button9.Location" type="System.Drawing.Point, System.Drawing">
     <value>209, 129</value>
@@ -534,6 +543,9 @@
   </data>
   <data name="Button18.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
+  </data>
+  <data name="&gt;&gt;Button14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Button5.Name" xml:space="preserve">
     <value>Button5</value>
@@ -631,8 +643,11 @@
         LHrEbu29UfyfFALVftWjYMEkZEigO8hz2/cQ+R8CWgSx/L7HhQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;Button16.Name" xml:space="preserve">
-    <value>Button16</value>
+  <data name="&gt;&gt;Button10.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Button3.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
   <data name="&gt;&gt;Button10.Name" xml:space="preserve">
     <value>Button10</value>
@@ -673,9 +688,6 @@
   <data name="Button6.Location" type="System.Drawing.Point, System.Drawing">
     <value>506, 50</value>
   </data>
-  <data name="Button14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 71</value>
-  </data>
   <data name="&gt;&gt;Button8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -694,8 +706,8 @@
   <data name="&gt;&gt;Button7.Name" xml:space="preserve">
     <value>Button7</value>
   </data>
-  <data name="&gt;&gt;Button7.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="Button6.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;Button11.Parent" xml:space="preserve">
     <value>$this</value>
@@ -703,20 +715,14 @@
   <data name="AxWindowsMediaPlayer1.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 42</value>
   </data>
-  <data name="&gt;&gt;Button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Button7.Location" type="System.Drawing.Point, System.Drawing">
     <value>407, 51</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>623, 320</value>
   </data>
-  <data name="&gt;&gt;Button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;Button3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Button16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
   </data>
   <data name="Button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -847,9 +853,6 @@
         mpOE6U6iSneycZwlyxbi0ndaTS0CiiivRPgQooooAKKKKACiiigAooooA//Z
 </value>
   </data>
-  <data name="&gt;&gt;TextBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="Button16.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
@@ -871,17 +874,14 @@
   <data name="Button7.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;Button16.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;Button5.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <data name="Button17.Text" xml:space="preserve">
     <value>Stop Station</value>
   </data>
-  <data name="Button5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 71</value>
-  </data>
-  <data name="Button6.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;Button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Button12.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -889,14 +889,17 @@
   <data name="Button9.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 71</value>
   </data>
+  <data name="AxWindowsMediaPlayer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>605, 233</value>
+  </data>
   <data name="&gt;&gt;Button1.Name" xml:space="preserve">
     <value>Button1</value>
   </data>
   <data name="Button8.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 71</value>
   </data>
-  <data name="Button12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 71</value>
+  <data name="&gt;&gt;Button8.Name" xml:space="preserve">
+    <value>Button8</value>
   </data>
   <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
     <value>19</value>
@@ -904,8 +907,14 @@
   <data name="Button10.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 129</value>
   </data>
+  <data name="Button5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 71</value>
+  </data>
   <data name="&gt;&gt;Button5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button16.Name" xml:space="preserve">
+    <value>Button16</value>
   </data>
   <data name="Button10.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 71</value>
@@ -1280,9 +1289,6 @@
   <data name="Button4.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="Button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 51</value>
-  </data>
   <data name="Button13.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 71</value>
   </data>
@@ -1298,11 +1304,8 @@
   <data name="Button11.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 129</value>
   </data>
-  <data name="&gt;&gt;Button8.Name" xml:space="preserve">
-    <value>Button8</value>
-  </data>
-  <data name="AxWindowsMediaPlayer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>605, 233</value>
+  <data name="&gt;&gt;Button16.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="Button14.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 204</value>
@@ -1310,17 +1313,11 @@
   <data name="&gt;&gt;Button17.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Button15.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="Button12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 71</value>
   </data>
   <data name="&gt;&gt;Button15.Name" xml:space="preserve">
     <value>Button15</value>
-  </data>
-  <data name="&gt;&gt;Button5.ZOrder" xml:space="preserve">
-    <value>15</value>
   </data>
   <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 71</value>
@@ -1334,14 +1331,8 @@
   <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 52</value>
   </data>
-  <data name="&gt;&gt;Button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="TextBox1.Text" xml:space="preserve">
     <value>Your Station Name Will Apear Here</value>
-  </data>
-  <data name="Button15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 204</value>
   </data>
   <data name="Button11.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1396,8 +1387,8 @@
         l6WrRo8VwF9DTwA6qScAnRLR/wE83L0izFn1+gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;Button18.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;TextBox1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="Button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1423,8 +1414,8 @@
         ZqjhhhweGBAAOw==
 </value>
   </data>
-  <data name="&gt;&gt;Button12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="AxWindowsMediaPlayer1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1504,10 +1495,19 @@
         x7v/ALpqgR8x9hQXE//Z
 </value>
   </data>
-  <data name="&gt;&gt;Button14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Button15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 233</value>
+  </data>
+  <data name="&gt;&gt;Button13.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;Button9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Button18.Parent" xml:space="preserve">
@@ -1592,8 +1592,8 @@
   <data name="TextBox1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;Button3.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="Button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 51</value>
   </data>
   <data name="Button9.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -1607,20 +1607,20 @@
   <data name="Button18.Size" type="System.Drawing.Size, System.Drawing">
     <value>242, 23</value>
   </data>
-  <data name="&gt;&gt;Button13.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="Button15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 204</value>
   </data>
   <data name="&gt;&gt;Button9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 233</value>
+  <data name="&gt;&gt;Button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Button5.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Button10.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="Button16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 23</value>
   </data>
   <data name="Button11.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 71</value>

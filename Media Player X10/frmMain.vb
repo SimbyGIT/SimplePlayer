@@ -4,7 +4,7 @@ Imports AxWMPLib
 Imports WMPLib
 
 Public Class frmMain
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click 
         Volume.Show()
     End Sub
 
@@ -69,7 +69,7 @@ Public Class frmMain
         End Try
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click 
 
 
         If _
@@ -85,8 +85,8 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub ImportASongToolStripMenuItem_Click(sender As Object, e As EventArgs) _
-        Handles ImportASongToolStripMenuItem.Click
+    Private Sub ImportASongToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImportASongToolStripMenuItem.Click _
+        
         OpenFileDialog1.Filter =
             "Аудиофайлы(.wav,*.mp3,*.mpeg,*.snd,*.au,*.aif,*.aifc,*.aiff,*.wma)|*.wav;*.mp3;*.mpeg;*.m4a;*.snd;*.au;*.aif;*.aifc;*.aiff;*.wma"
         OpenFileDialog1.FileName = ""
@@ -123,21 +123,21 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
+    Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll 
         Me.AxWindowsMediaPlayer1.Ctlcontrols.currentPosition = TrackBar1.Value
     End Sub
 
-    Private Sub AxWindowsMediaPlayer1_Buffering(sender As Object, e As _WMPOCXEvents_BufferingEvent) _
-        Handles AxWindowsMediaPlayer1.Buffering
+    Private Sub AxWindowsMediaPlayer1_Buffering(sender As Object, e As _WMPOCXEvents_BufferingEvent) Handles AxWindowsMediaPlayer1.Buffering _
+        
         BackgroundWorker1.RunWorkerAsync()
     End Sub
 
-    Private Sub AxWindowsMediaPlayer1_NewStream(sender As Object, e As EventArgs) _
-        Handles AxWindowsMediaPlayer1.NewStream
+    Private Sub AxWindowsMediaPlayer1_NewStream(sender As Object, e As EventArgs) Handles AxWindowsMediaPlayer1.NewStream _
+        
     End Sub
 
-    Private Sub AxWindowsMediaPlayer1_PlayStateChange(sender As Object, e As _WMPOCXEvents_PlayStateChangeEvent) _
-        Handles AxWindowsMediaPlayer1.PlayStateChange
+    Private Sub AxWindowsMediaPlayer1_PlayStateChange(sender As Object, e As _WMPOCXEvents_PlayStateChangeEvent) Handles AxWindowsMediaPlayer1.PlayStateChange _
+        
 
 
         If _
@@ -183,7 +183,7 @@ Public Class frmMain
         End Try
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click 
 
         AxWindowsMediaPlayer1.URL = ""
         Timer1.Stop()
@@ -192,7 +192,7 @@ Public Class frmMain
         Label2.Text = "----"
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click 
         If AxWindowsMediaPlayer1.Ctlcontrols.currentPosition <= 3 Then
             Try
 
@@ -226,7 +226,7 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click 
         Try
 
             Timer1.Stop()
@@ -252,7 +252,7 @@ Public Class frmMain
         End Try
     End Sub
 
-    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click 
         End
     End Sub
 
@@ -324,22 +324,22 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub ListBox1_DoubleClick(sender As Object, e As EventArgs) Handles ListBox1.DoubleClick
+    Private Sub ListBox1_DoubleClick(sender As Object, e As EventArgs) Handles ListBox1.DoubleClick 
 
         Button5.PerformClick()
     End Sub
 
-    Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
+    Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click 
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click 
         AxWindowsMediaPlayer1.settings.volume = 0
         Volume.TrackBar1.Value = 0
     End Sub
 
 
-    Private Sub DeleteAllToolStripMenuItem_Click(sender As Object, e As EventArgs) _
-        Handles DeleteAllToolStripMenuItem.Click
+    Private Sub DeleteAllToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteAllToolStripMenuItem.Click _
+        
         Timer1.Stop()
         AxWindowsMediaPlayer1.URL = ""
         ListBox1.Items.Clear()
@@ -353,8 +353,8 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub DeleteSelectedItemToolStripMenuItem_Click(sender As Object, e As EventArgs) _
-        Handles DeleteSelectedItemToolStripMenuItem.Click
+    Private Sub DeleteSelectedItemToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteSelectedItemToolStripMenuItem.Click _
+        
         Try
             ListBox3.SelectedIndex = ListBox1.SelectedIndex
             ListBox1.Items.Remove(ListBox1.SelectedItem)
@@ -382,19 +382,19 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) _
-        Handles SettingsToolStripMenuItem.Click
+    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click _
+        
         Settings.Show()
     End Sub
 
 
-    Private Sub RadioPlayerX10ToolStripMenuItem_Click(sender As Object, e As EventArgs) _
-        Handles RadioPlayerX10ToolStripMenuItem.Click
+    Private Sub RadioPlayerX10ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RadioPlayerX10ToolStripMenuItem.Click _
+        
         Radio_Player_X10.Show()
     End Sub
 
-    Private Sub CreateSaveAPlaylistToolStripMenuItem_Click(sender As Object, e As EventArgs) _
-        Handles CreateSaveAPlaylistToolStripMenuItem.Click
+    Private Sub CreateSaveAPlaylistToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreateSaveAPlaylistToolStripMenuItem.Click _
+        
         Try
             Create_or_Save_Playlist.Show()
 
@@ -404,8 +404,8 @@ Public Class frmMain
         End Try
     End Sub
 
-    Private Sub Playlist1ToolStripMenuItem_Click(sender As Object, e As EventArgs) _
-        Handles Playlist1ToolStripMenuItem.Click
+    Private Sub Playlist1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Playlist1ToolStripMenuItem.Click _
+        
         Try
             ListBox1.Items.Clear()
             ListBox3.Items.Clear()
@@ -427,8 +427,8 @@ Public Class frmMain
         End Try
     End Sub
 
-    Private Sub Playlist2ToolStripMenuItem_Click(sender As Object, e As EventArgs) _
-        Handles Playlist2ToolStripMenuItem.Click
+    Private Sub Playlist2ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Playlist2ToolStripMenuItem.Click _
+        
         Try
             ListBox1.Items.Clear()
             ListBox3.Items.Clear()
@@ -450,8 +450,8 @@ Public Class frmMain
         End Try
     End Sub
 
-    Private Sub Playlist3ToolStripMenuItem_Click(sender As Object, e As EventArgs) _
-        Handles Playlist3ToolStripMenuItem.Click
+    Private Sub Playlist3ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Playlist3ToolStripMenuItem.Click _
+        
         Try
             ListBox1.Items.Clear()
             ListBox3.Items.Clear()
@@ -473,8 +473,8 @@ Public Class frmMain
         End Try
     End Sub
 
-    Private Sub Playlist4ToolStripMenuItem_Click(sender As Object, e As EventArgs) _
-        Handles Playlist4ToolStripMenuItem.Click
+    Private Sub Playlist4ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Playlist4ToolStripMenuItem.Click _
+        
         Try
             ListBox1.Items.Clear()
             ListBox3.Items.Clear()
@@ -496,8 +496,8 @@ Public Class frmMain
         End Try
     End Sub
 
-    Private Sub AxWindowsMediaPlayer1_MediaError(sender As Object, e As _WMPOCXEvents_MediaErrorEvent) _
-        Handles AxWindowsMediaPlayer1.MediaError
+    Private Sub AxWindowsMediaPlayer1_MediaError(sender As Object, e As _WMPOCXEvents_MediaErrorEvent) Handles AxWindowsMediaPlayer1.MediaError _
+        
         MsgBox(
             "A Error Has Occured. The File In Location " & ListBox3.SelectedItem &
             " . Is Either Corrupt Or Has Moved. If This File Is In A Playlist Please Remove It. Press OK To Remove The Item From Now Playing.")
@@ -507,8 +507,8 @@ Public Class frmMain
         Button3.PerformClick()
     End Sub
 
-    Private Sub PlayerOptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) _
-        Handles PlayerOptionsToolStripMenuItem.Click
+    Private Sub PlayerOptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PlayerOptionsToolStripMenuItem.Click _
+        
     End Sub
 End Class
 
