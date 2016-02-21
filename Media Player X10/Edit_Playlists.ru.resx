@@ -457,7 +457,7 @@
 </value>
   </data>
   <data name="PlayToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>148, 22</value>
   </data>
   <data name="PlayToolStripMenuItem.Text" xml:space="preserve">
     <value>Играть</value>
@@ -522,7 +522,7 @@
 </value>
   </data>
   <data name="PauseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>148, 22</value>
   </data>
   <data name="PauseToolStripMenuItem.Text" xml:space="preserve">
     <value>Пауза</value>
@@ -587,13 +587,13 @@
 </value>
   </data>
   <data name="StopToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>148, 22</value>
   </data>
   <data name="StopToolStripMenuItem.Text" xml:space="preserve">
     <value>Стоп</value>
   </data>
   <data name="ToolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 6</value>
+    <value>145, 6</value>
   </data>
   <data name="PreviousToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -657,7 +657,7 @@
 </value>
   </data>
   <data name="PreviousToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>148, 22</value>
   </data>
   <data name="PreviousToolStripMenuItem.Text" xml:space="preserve">
     <value>Предыдущий</value>
@@ -724,7 +724,7 @@
 </value>
   </data>
   <data name="NextToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>148, 22</value>
   </data>
   <data name="NextToolStripMenuItem.Text" xml:space="preserve">
     <value>Следующий</value>
@@ -814,15 +814,28 @@
   <data name="Button3.Location" type="System.Drawing.Point, System.Drawing">
     <value>389, 356</value>
   </data>
+  <data name="Search.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI1SURBVDhPjZJNaBNBGIaDePAktCbGJNuNiAh68ODJi3jN
+        uWZ/iuBRPEiPgtVkNjWJadOU7qK2tiVp0xYkeCgi4qEkzW5Mskk2Sf/yh+jVQyjiqQThc8YOjSEqeWBY
+        eGfe9/u+2TH9i9sodVpY2r/Pvd5T+YWdQ2G+2ubmd5L8y+o9hOAUPfZ3xjYaZmG1kRdXGyDE6iBEa8Av
+        H4CwuAf8wi5wrypbd+X8WXq8F5IuxluquNYCMd4EPlb7gAMeiksH49zibpIE4C6Al4331NILv/FZFNex
+        mQTE6uNUPgGPIfEvKsDJBrgjuovKXcS15iYJEOLNDJV6IB3ySnkfdwCjs3qUyl3G1ls1HALiSn2SSn1w
+        Slnh5n530F8EX14VLxBWajNU6gNXX+bmSuCeKSSp1MUhl6OXlApclctfnOjrGSqfQG7/jmx8c4V1uBXM
+        9hdxREo37bMG4C+MhItvL//xuxiUHbYj7aMVaXDOs90Zfqxeo1sU/HiYiOFyhEsKM10EdqoIzkD+kHmW
+        3WQmP72zSdp3q6SBxavC0JOURF0UYg6XEo7pQocNFd1MqBBiA7kO688BDgC7LwM2SQUzUo/MnvRT6jqG
+        PFtsSJCK7FQB2KD+E1eesAf1K9jsdfgyiQtIe3MeqRNWlLpIbRRsdgZyCfa5Ds6gjs15YP3ZNl436In/
+        Y/NlHo34s0AWaRXP2rYNaiZYvOktMt/xjFrbhtKDmwlDntQDi2f7h9mr5fGM16k8ICbTL7soJ/qjiuB1
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Search.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Search.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 21</value>
-  </data>
-  <data name="Search.Text" xml:space="preserve">
-    <value>Поиск</value>
+    <value>27, 20</value>
   </data>
   <data name="TextBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>212, 20</value>

@@ -272,6 +272,7 @@ Partial Class Edit_Playlists
         'Search
         '
         resources.ApplyResources(Me.Search, "Search")
+        Me.Search.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Search.Name = "Search"
         Me.Search.UseVisualStyleBackColor = true
         '
