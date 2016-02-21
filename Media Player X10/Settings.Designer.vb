@@ -24,20 +24,20 @@ Partial Class Settings
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Settings))
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
-        Me.Button8 = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.HScrollBar1 = New System.Windows.Forms.HScrollBar()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TabPage2.SuspendLayout
-        Me.GroupBox7.SuspendLayout
+        Me.HScrollBar1 = New System.Windows.Forms.HScrollBar()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabControl1.SuspendLayout
         Me.TabPage1.SuspendLayout
+        Me.GroupBox7.SuspendLayout
+        Me.TabPage2.SuspendLayout
         Me.SuspendLayout
         '
         'Button4
@@ -45,28 +45,6 @@ Partial Class Settings
         resources.ApplyResources(Me.Button4, "Button4")
         Me.Button4.Name = "Button4"
         Me.Button4.UseVisualStyleBackColor = true
-        '
-        'TabPage2
-        '
-        Me.TabPage2.BackColor = System.Drawing.Color.White
-        Me.TabPage2.Controls.Add(Me.GroupBox7)
-        resources.ApplyResources(Me.TabPage2, "TabPage2")
-        Me.TabPage2.Name = "TabPage2"
-        '
-        'GroupBox7
-        '
-        Me.GroupBox7.Controls.Add(Me.Button8)
-        Me.GroupBox7.ForeColor = System.Drawing.Color.Black
-        resources.ApplyResources(Me.GroupBox7, "GroupBox7")
-        Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.TabStop = false
-        '
-        'Button8
-        '
-        Me.Button8.ForeColor = System.Drawing.Color.Black
-        resources.ApplyResources(Me.Button8, "Button8")
-        Me.Button8.Name = "Button8"
-        Me.Button8.UseVisualStyleBackColor = true
         '
         'TabControl1
         '
@@ -105,16 +83,40 @@ Partial Class Settings
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.UseVisualStyleBackColor = true
         '
-        'HScrollBar1
-        '
-        resources.ApplyResources(Me.HScrollBar1, "HScrollBar1")
-        Me.HScrollBar1.Name = "HScrollBar1"
-        Me.HScrollBar1.Value = 100
-        '
         'Label1
         '
         resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
+        '
+        'HScrollBar1
+        '
+        resources.ApplyResources(Me.HScrollBar1, "HScrollBar1")
+        Me.HScrollBar1.LargeChange = 2
+        Me.HScrollBar1.Minimum = 40
+        Me.HScrollBar1.Name = "HScrollBar1"
+        Me.HScrollBar1.Value = 40
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.Controls.Add(Me.Button8)
+        Me.GroupBox7.ForeColor = System.Drawing.Color.Black
+        resources.ApplyResources(Me.GroupBox7, "GroupBox7")
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.TabStop = false
+        '
+        'Button8
+        '
+        Me.Button8.ForeColor = System.Drawing.Color.Black
+        resources.ApplyResources(Me.Button8, "Button8")
+        Me.Button8.Name = "Button8"
+        Me.Button8.UseVisualStyleBackColor = true
+        '
+        'TabPage2
+        '
+        Me.TabPage2.BackColor = System.Drawing.Color.White
+        Me.TabPage2.Controls.Add(Me.GroupBox7)
+        resources.ApplyResources(Me.TabPage2, "TabPage2")
+        Me.TabPage2.Name = "TabPage2"
         '
         'Settings
         '
@@ -127,18 +129,15 @@ Partial Class Settings
         Me.MaximizeBox = false
         Me.MinimizeBox = false
         Me.Name = "Settings"
-        Me.TabPage2.ResumeLayout(false)
-        Me.GroupBox7.ResumeLayout(false)
         Me.TabControl1.ResumeLayout(false)
         Me.TabPage1.ResumeLayout(false)
         Me.TabPage1.PerformLayout
+        Me.GroupBox7.ResumeLayout(false)
+        Me.TabPage2.ResumeLayout(false)
         Me.ResumeLayout(false)
 
 End Sub
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents GroupBox7 As GroupBox
-    Friend WithEvents Button8 As Button
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents Button2 As Button
@@ -146,4 +145,7 @@ End Sub
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label1 As Label
     Friend WithEvents HScrollBar1 As HScrollBar
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents GroupBox7 As GroupBox
+    Friend WithEvents Button8 As Button
 End Class

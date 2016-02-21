@@ -262,9 +262,19 @@ Me.Close()
     Private Sub frmMain_Leave(sender As Object, e As EventArgs) Handles Me.Leave
     End Sub
 
-    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Opacity = 44
+    Private Sub FindMyString(ByVal searchString As String)
+   If searchString <> String.Empty Then
+      Dim index As Integer = listBox1.FindString(searchString)
+      If index <> -1 Then
+         listBox1.SetSelected(index, True)
+      Else
+         MessageBox.Show("Нет совпадений")
+      End If
+   End If
+End Sub
 
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Opacity = My.Settings.Opacity
         If My.Settings.Skin = True then
             VisualStyler.RestoreApplicationSkin()
             Else 
@@ -532,6 +542,14 @@ Me.Close()
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         AxWindowsMediaPlayer1.Ctlcontrols.pause()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        FindMyString(TextBox1.Text)
+    End Sub
+
+    Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
+
     End Sub
 End Class
 

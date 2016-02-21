@@ -74,6 +74,8 @@ Partial Class frmMain
         Me.ListBox4 = New System.Windows.Forms.ListBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button7 = New System.Windows.Forms.Button()
         CType(Me.VisualStyler1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabPage1.SuspendLayout
         CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).BeginInit
@@ -98,12 +100,14 @@ Partial Class frmMain
         Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"),SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
         Me.VisualStyler1.ShadowStyle = SkinSoft.VisualStyler.ShadowStyle.Bold
         Me.VisualStyler1.ToolStripStyle = SkinSoft.VisualStyler.ToolStripRenderStyle.OfficeAuto
-        Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (iTunes).vssf")
+        Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Aqua).vssf")
         '
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.White
+        Me.TabPage1.Controls.Add(Me.Button7)
         Me.TabPage1.Controls.Add(Me.Button9)
+        Me.TabPage1.Controls.Add(Me.TextBox1)
         Me.TabPage1.Controls.Add(Me.CheckBox1)
         Me.TabPage1.Controls.Add(Me.Button6)
         Me.TabPage1.Controls.Add(Me.AxWindowsMediaPlayer1)
@@ -115,6 +119,7 @@ Partial Class frmMain
         Me.TabPage1.ForeColor = System.Drawing.Color.Black
         resources.ApplyResources(Me.TabPage1, "TabPage1")
         Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.UseVisualStyleBackColor = true
         '
         'Button9
         '
@@ -379,13 +384,24 @@ Partial Class frmMain
         resources.ApplyResources(Me.AboutToolStripMenuItem, "AboutToolStripMenuItem")
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         '
+        'TextBox1
+        '
+        resources.ApplyResources(Me.TextBox1, "TextBox1")
+        Me.TextBox1.Name = "TextBox1"
+        '
+        'Button7
+        '
+        resources.ApplyResources(Me.Button7, "Button7")
+        Me.Button7.Name = "Button7"
+        Me.Button7.UseVisualStyleBackColor = true
+        '
         'frmMain
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.Controls.Add(Me.TabControl1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "frmMain"
         Me.TransparencyKey = System.Drawing.Color.Fuchsia
         CType(Me.VisualStyler1,System.ComponentModel.ISupportInitialize).EndInit
@@ -452,4 +468,6 @@ End Sub
     Friend WithEvents ListBox3 As ListBox
     Friend WithEvents ListBox4 As ListBox
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Button7 As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class
