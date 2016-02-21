@@ -32,7 +32,9 @@ Partial Class frmMain
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
@@ -68,14 +70,12 @@ Partial Class frmMain
         Me.ToolStripSeparator17 = New System.Windows.Forms.ToolStripSeparator()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator19 = New System.Windows.Forms.ToolStripSeparator()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.ListBox3 = New System.Windows.Forms.ListBox()
         Me.ListBox4 = New System.Windows.Forms.ListBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button7 = New System.Windows.Forms.Button()
         CType(Me.VisualStyler1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabPage1.SuspendLayout
         CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).BeginInit
@@ -86,12 +86,20 @@ Partial Class frmMain
         Me.TabControl1.SuspendLayout
         Me.SuspendLayout
         '
+        'OpenFileDialog1
+        '
+        resources.ApplyResources(Me.OpenFileDialog1, "OpenFileDialog1")
+        '
         'Timer1
         '
         '
         'NotifyIcon1
         '
         resources.ApplyResources(Me.NotifyIcon1, "NotifyIcon1")
+        '
+        'OpenFileDialog2
+        '
+        resources.ApplyResources(Me.OpenFileDialog2, "OpenFileDialog2")
         '
         'VisualStyler1
         '
@@ -100,10 +108,11 @@ Partial Class frmMain
         Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"),SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
         Me.VisualStyler1.ShadowStyle = SkinSoft.VisualStyler.ShadowStyle.Bold
         Me.VisualStyler1.ToolStripStyle = SkinSoft.VisualStyler.ToolStripRenderStyle.OfficeAuto
-        Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Aqua).vssf")
+        Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Leopard).vssf")
         '
         'TabPage1
         '
+        resources.ApplyResources(Me.TabPage1, "TabPage1")
         Me.TabPage1.BackColor = System.Drawing.Color.White
         Me.TabPage1.Controls.Add(Me.Button7)
         Me.TabPage1.Controls.Add(Me.Button9)
@@ -117,15 +126,25 @@ Partial Class frmMain
         Me.TabPage1.Controls.Add(Me.MenuStrip1)
         Me.TabPage1.Controls.Add(Me.GroupBox5)
         Me.TabPage1.ForeColor = System.Drawing.Color.Black
-        resources.ApplyResources(Me.TabPage1, "TabPage1")
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.UseVisualStyleBackColor = true
+        '
+        'Button7
+        '
+        resources.ApplyResources(Me.Button7, "Button7")
+        Me.Button7.Name = "Button7"
+        Me.Button7.UseVisualStyleBackColor = true
         '
         'Button9
         '
         resources.ApplyResources(Me.Button9, "Button9")
         Me.Button9.Name = "Button9"
         Me.Button9.UseVisualStyleBackColor = true
+        '
+        'TextBox1
+        '
+        resources.ApplyResources(Me.TextBox1, "TextBox1")
+        Me.TextBox1.Name = "TextBox1"
         '
         'CheckBox1
         '
@@ -160,6 +179,7 @@ Partial Class frmMain
         '
         'GroupBox1
         '
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.Button4)
@@ -168,7 +188,6 @@ Partial Class frmMain
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.TrackBar1)
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.TabStop = false
         '
@@ -216,34 +235,34 @@ Partial Class frmMain
         '
         'MenuStrip1
         '
+        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
         Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportDeleteToolStripMenuItem, Me.PlayerOptionsToolStripMenuItem, Me.HelpToolStripMenuItem})
-        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
         Me.MenuStrip1.Name = "MenuStrip1"
         '
         'ImportDeleteToolStripMenuItem
         '
+        resources.ApplyResources(Me.ImportDeleteToolStripMenuItem, "ImportDeleteToolStripMenuItem")
         Me.ImportDeleteToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
         Me.ImportDeleteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportASongToolStripMenuItem, Me.ToolStripSeparator9, Me.OpenPlaylistToolStripMenuItem, Me.ToolStripSeparator1, Me.CreateSaveAPlaylistToolStripMenuItem, Me.ToolStripSeparator23, Me.DeleteSelectedItemToolStripMenuItem, Me.DeleteAllToolStripMenuItem, Me.ToolStripSeparator2, Me.ExitToolStripMenuItem})
         Me.ImportDeleteToolStripMenuItem.ForeColor = System.Drawing.Color.Black
-        resources.ApplyResources(Me.ImportDeleteToolStripMenuItem, "ImportDeleteToolStripMenuItem")
         Me.ImportDeleteToolStripMenuItem.Name = "ImportDeleteToolStripMenuItem"
         '
         'ImportASongToolStripMenuItem
         '
-        Me.ImportASongToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control
         resources.ApplyResources(Me.ImportASongToolStripMenuItem, "ImportASongToolStripMenuItem")
+        Me.ImportASongToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control
         Me.ImportASongToolStripMenuItem.Name = "ImportASongToolStripMenuItem"
         '
         'ToolStripSeparator9
         '
-        Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
         resources.ApplyResources(Me.ToolStripSeparator9, "ToolStripSeparator9")
+        Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
         '
         'OpenPlaylistToolStripMenuItem
         '
-        Me.OpenPlaylistToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Playlist1ToolStripMenuItem, Me.Playlist2ToolStripMenuItem, Me.Playlist3ToolStripMenuItem, Me.Playlist4ToolStripMenuItem})
         resources.ApplyResources(Me.OpenPlaylistToolStripMenuItem, "OpenPlaylistToolStripMenuItem")
+        Me.OpenPlaylistToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Playlist1ToolStripMenuItem, Me.Playlist2ToolStripMenuItem, Me.Playlist3ToolStripMenuItem, Me.Playlist4ToolStripMenuItem})
         Me.OpenPlaylistToolStripMenuItem.Name = "OpenPlaylistToolStripMenuItem"
         '
         'Playlist1ToolStripMenuItem
@@ -268,9 +287,9 @@ Partial Class frmMain
         '
         'ToolStripSeparator1
         '
+        resources.ApplyResources(Me.ToolStripSeparator1, "ToolStripSeparator1")
         Me.ToolStripSeparator1.BackColor = System.Drawing.Color.Silver
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        resources.ApplyResources(Me.ToolStripSeparator1, "ToolStripSeparator1")
         '
         'CreateSaveAPlaylistToolStripMenuItem
         '
@@ -279,37 +298,37 @@ Partial Class frmMain
         '
         'ToolStripSeparator23
         '
-        Me.ToolStripSeparator23.Name = "ToolStripSeparator23"
         resources.ApplyResources(Me.ToolStripSeparator23, "ToolStripSeparator23")
+        Me.ToolStripSeparator23.Name = "ToolStripSeparator23"
         '
         'DeleteSelectedItemToolStripMenuItem
         '
-        Me.DeleteSelectedItemToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control
         resources.ApplyResources(Me.DeleteSelectedItemToolStripMenuItem, "DeleteSelectedItemToolStripMenuItem")
+        Me.DeleteSelectedItemToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control
         Me.DeleteSelectedItemToolStripMenuItem.Name = "DeleteSelectedItemToolStripMenuItem"
         '
         'DeleteAllToolStripMenuItem
         '
-        Me.DeleteAllToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control
         resources.ApplyResources(Me.DeleteAllToolStripMenuItem, "DeleteAllToolStripMenuItem")
+        Me.DeleteAllToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control
         Me.DeleteAllToolStripMenuItem.Name = "DeleteAllToolStripMenuItem"
         '
         'ToolStripSeparator2
         '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
         resources.ApplyResources(Me.ToolStripSeparator2, "ToolStripSeparator2")
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
         '
         'ExitToolStripMenuItem
         '
-        Me.ExitToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control
         resources.ApplyResources(Me.ExitToolStripMenuItem, "ExitToolStripMenuItem")
+        Me.ExitToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         '
         'PlayerOptionsToolStripMenuItem
         '
+        resources.ApplyResources(Me.PlayerOptionsToolStripMenuItem, "PlayerOptionsToolStripMenuItem")
         Me.PlayerOptionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RadioPlayerX10ToolStripMenuItem})
         Me.PlayerOptionsToolStripMenuItem.ForeColor = System.Drawing.Color.Black
-        resources.ApplyResources(Me.PlayerOptionsToolStripMenuItem, "PlayerOptionsToolStripMenuItem")
         Me.PlayerOptionsToolStripMenuItem.Name = "PlayerOptionsToolStripMenuItem"
         '
         'RadioPlayerX10ToolStripMenuItem
@@ -319,15 +338,15 @@ Partial Class frmMain
         '
         'HelpToolStripMenuItem
         '
+        resources.ApplyResources(Me.HelpToolStripMenuItem, "HelpToolStripMenuItem")
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator17, Me.SettingsToolStripMenuItem, Me.ToolStripSeparator19, Me.AboutToolStripMenuItem})
         Me.HelpToolStripMenuItem.ForeColor = System.Drawing.Color.Black
-        resources.ApplyResources(Me.HelpToolStripMenuItem, "HelpToolStripMenuItem")
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         '
         'ToolStripSeparator17
         '
-        Me.ToolStripSeparator17.Name = "ToolStripSeparator17"
         resources.ApplyResources(Me.ToolStripSeparator17, "ToolStripSeparator17")
+        Me.ToolStripSeparator17.Name = "ToolStripSeparator17"
         '
         'SettingsToolStripMenuItem
         '
@@ -336,64 +355,53 @@ Partial Class frmMain
         '
         'ToolStripSeparator19
         '
-        Me.ToolStripSeparator19.Name = "ToolStripSeparator19"
         resources.ApplyResources(Me.ToolStripSeparator19, "ToolStripSeparator19")
-        '
-        'GroupBox5
-        '
-        Me.GroupBox5.Controls.Add(Me.ListBox1)
-        Me.GroupBox5.Controls.Add(Me.ListBox3)
-        Me.GroupBox5.Controls.Add(Me.ListBox4)
-        Me.GroupBox5.ForeColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.GroupBox5, "GroupBox5")
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.TabStop = false
-        '
-        'ListBox1
-        '
-        Me.ListBox1.BackColor = System.Drawing.Color.White
-        Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.ListBox1, "ListBox1")
-        Me.ListBox1.ForeColor = System.Drawing.Color.Black
-        Me.ListBox1.FormattingEnabled = true
-        Me.ListBox1.Name = "ListBox1"
-        '
-        'ListBox3
-        '
-        Me.ListBox3.FormattingEnabled = true
-        resources.ApplyResources(Me.ListBox3, "ListBox3")
-        Me.ListBox3.Name = "ListBox3"
-        '
-        'ListBox4
-        '
-        Me.ListBox4.BackColor = System.Drawing.Color.Black
-        Me.ListBox4.ForeColor = System.Drawing.Color.White
-        Me.ListBox4.FormattingEnabled = true
-        resources.ApplyResources(Me.ListBox4, "ListBox4")
-        Me.ListBox4.Name = "ListBox4"
-        '
-        'TabControl1
-        '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        resources.ApplyResources(Me.TabControl1, "TabControl1")
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
+        Me.ToolStripSeparator19.Name = "ToolStripSeparator19"
         '
         'AboutToolStripMenuItem
         '
         resources.ApplyResources(Me.AboutToolStripMenuItem, "AboutToolStripMenuItem")
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         '
-        'TextBox1
+        'GroupBox5
         '
-        resources.ApplyResources(Me.TextBox1, "TextBox1")
-        Me.TextBox1.Name = "TextBox1"
+        resources.ApplyResources(Me.GroupBox5, "GroupBox5")
+        Me.GroupBox5.Controls.Add(Me.ListBox1)
+        Me.GroupBox5.Controls.Add(Me.ListBox3)
+        Me.GroupBox5.Controls.Add(Me.ListBox4)
+        Me.GroupBox5.ForeColor = System.Drawing.Color.White
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.TabStop = false
         '
-        'Button7
+        'ListBox1
         '
-        resources.ApplyResources(Me.Button7, "Button7")
-        Me.Button7.Name = "Button7"
-        Me.Button7.UseVisualStyleBackColor = true
+        resources.ApplyResources(Me.ListBox1, "ListBox1")
+        Me.ListBox1.BackColor = System.Drawing.Color.White
+        Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ListBox1.ForeColor = System.Drawing.Color.Black
+        Me.ListBox1.FormattingEnabled = true
+        Me.ListBox1.Name = "ListBox1"
+        '
+        'ListBox3
+        '
+        resources.ApplyResources(Me.ListBox3, "ListBox3")
+        Me.ListBox3.FormattingEnabled = true
+        Me.ListBox3.Name = "ListBox3"
+        '
+        'ListBox4
+        '
+        resources.ApplyResources(Me.ListBox4, "ListBox4")
+        Me.ListBox4.BackColor = System.Drawing.Color.Black
+        Me.ListBox4.ForeColor = System.Drawing.Color.White
+        Me.ListBox4.FormattingEnabled = true
+        Me.ListBox4.Name = "ListBox4"
+        '
+        'TabControl1
+        '
+        resources.ApplyResources(Me.TabControl1, "TabControl1")
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
         '
         'frmMain
         '
