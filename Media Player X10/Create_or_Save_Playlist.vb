@@ -21,7 +21,7 @@ Public Class Create_or_Save_Playlist
 
                     Else
                         MsgBox(
-                            "All Playlist Spots Have Been Filled Please Delete Some By Visiting The Playlist Options Under The Settings.")
+                            "Все места под плейлист заняты. Удалите хотя бы один.")
                         Me.Close()
 
 
@@ -33,7 +33,7 @@ Public Class Create_or_Save_Playlist
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         If TextBox1.Text = "" Then
-            MsgBox("Please Enter A Playlist Name Before Saving")
+            MsgBox("Введите название плейлиста перед сохранением")
         Else
 
 
@@ -68,8 +68,8 @@ Public Class Create_or_Save_Playlist
                     Next
                     a.Close()
                 End If
-                MsgBox("Playlist 1 Created Successfully")
-                My.Settings.Playlist1_Name = "Playlist1"
+                MsgBox("Плейлист 1 успешно создан")
+                My.Settings.Playlist1_Name = "Плейлист 1"
                 My.Settings.Playlist1_User_Imput_Name = TextBox1.Text
                 frmMain.Playlist1ToolStripMenuItem.Visible = True
                 frmMain.Playlist1ToolStripMenuItem.Text = My.Settings.Playlist1_User_Imput_Name
@@ -108,8 +108,8 @@ Public Class Create_or_Save_Playlist
                         Next
                         a.Close()
                     End If
-                    MsgBox("Playlist 2 Created Successfully")
-                    My.Settings.Playlist2_Name = "Playlist2"
+                    MsgBox("Плейлист 2 успешно создан")
+                    My.Settings.Playlist2_Name = "Плейлист 2"
                     My.Settings.Playlist2_User_Imput_Name = TextBox1.Text
                     frmMain.Playlist2ToolStripMenuItem.Visible = True
                     frmMain.Playlist2ToolStripMenuItem.Text = My.Settings.Playlist2_User_Imput_Name
@@ -151,8 +151,8 @@ Public Class Create_or_Save_Playlist
                             Next
                             a.Close()
                         End If
-                        MsgBox("Playlist 3 Created Successfully")
-                        My.Settings.Playlist3_Name = "Playlist3"
+                        MsgBox("Плейлист 3 успешно создан")
+                        My.Settings.Playlist3_Name = "Плейлист 3"
                         My.Settings.Playlist3_User_Imput_Name = TextBox1.Text
                         frmMain.Playlist3ToolStripMenuItem.Visible = True
                         frmMain.Playlist3ToolStripMenuItem.Text = My.Settings.Playlist3_User_Imput_Name
@@ -202,8 +202,8 @@ Public Class Create_or_Save_Playlist
                                 Next
                                 a.Close()
                             End If
-                            MsgBox("Playlist 4 Created Successfully")
-                            My.Settings.Playlist4_Name = "Playlist4"
+                            MsgBox("Плейлист 4 успешно создан")
+                            My.Settings.Playlist4_Name = "Плейлист 4"
                             My.Settings.Playlist4_User_Imput_Name = TextBox1.Text
                             frmMain.Playlist4ToolStripMenuItem.Visible = True
                             frmMain.Playlist4ToolStripMenuItem.Text = My.Settings.Playlist4_User_Imput_Name
@@ -247,7 +247,7 @@ Public Class Create_or_Save_Playlist
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         If frmMain.ListBox1.Items.Count = 0 Then
-            MsgBox("Please Add Songs To The Music Player Playlist Before Importing Songs To This Playlist")
+            MsgBox("Добавьте треки в плейлист плеера до того как импортировать песни в этот плейлист")
         Else
 
             For Each s As String In frmMain.ListBox1.Items
@@ -262,7 +262,7 @@ Public Class Create_or_Save_Playlist
     Private Sub AddMusicPlayerPlaylistToolStripMenuItem_Click(sender As Object, e As EventArgs) _
         Handles AddMusicPlayerPlaylistToolStripMenuItem.Click
         If frmMain.ListBox1.Items.Count = 0 Then
-            MsgBox("Please Add Songs To The Music Player Playlist Before Importing Songs To This Playlist")
+            MsgBox("Добавьте треки в плейлист плеера до того как импортировать песни в этот плейлист")
         Else
 
             For Each s As String In frmMain.ListBox1.Items
