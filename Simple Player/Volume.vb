@@ -22,5 +22,6 @@
 
     Private Sub HScrollBar1_Scroll(sender As Object, e As ScrollEventArgs) Handles HScrollBar1.Scroll
        frmMain.AxWindowsMediaPlayer1.settings.balance = HScrollBar1.Value
+        Radio_Player_X10.AxWindowsMediaPlayer1.settings.balance =HScrollBar1.Value
     End Sub
 End Class
