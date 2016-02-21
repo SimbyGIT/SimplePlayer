@@ -8,6 +8,7 @@ Imports WMPLib
 Public Class frmMain
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click 
         Volume.Show()
+        NotifyBaloon()
     End Sub
 
 
@@ -424,6 +425,15 @@ End Sub
         End Try
     End Sub
 
+    Public Sub NotifyBaloon ()
+        
+    notifyIcon1.BalloonTipTitle = "Simple Player"
+    notifyIcon1.BalloonTipText = "Сейчас играет: " + Label2.Text
+    notifyIcon1.Visible = True
+    notifyIcon1.ShowBalloonTip(3000)
+            
+    End Sub
+
     Private Sub Playlist1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Playlist1ToolStripMenuItem.Click _
         
         Try
@@ -548,8 +558,19 @@ End Sub
         FindMyString(TextBox1.Text)
     End Sub
 
-    Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
+    Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) 
 
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label2_TextChanged(sender As Object, e As EventArgs) Handles Label2.TextChanged
+        If My.Settings.Notify = True then
+             NotifyBaloon()
+        End If
+       
     End Sub
 End Class
 
