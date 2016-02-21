@@ -1,6 +1,8 @@
 ﻿
 Imports System.IO
 Imports AxWMPLib
+Imports SkinSoft.VisualStyler
+Imports SkinSoft.VisualStyler.Licensing
 Imports WMPLib
 
 Public Class frmMain
@@ -260,7 +262,12 @@ Public Class frmMain
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-             Application.EnableVisualStyles()
+        If My.Settings.Skin = True then
+            VisualStyler.RestoreApplicationSkin()
+            Else 
+            VisualStyler.RemoveApplicationSkin()
+
+                End If
         Button2.Visible = False
 
         Try
