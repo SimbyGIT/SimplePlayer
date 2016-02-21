@@ -8,7 +8,6 @@ Imports WMPLib
 Public Class frmMain
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click 
         Volume.Show()
-        NotifyBaloon()
     End Sub
 
 
@@ -571,6 +570,11 @@ End Sub
              NotifyBaloon()
         End If
        
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Equa.Show()
+
     End Sub
 End Class
 

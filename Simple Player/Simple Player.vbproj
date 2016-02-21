@@ -124,6 +124,12 @@
     <Compile Include="Edit_Playlists.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Equa.Designer.vb">
+      <DependentUpon>Equa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Equa.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMain.designer.vb">
       <DependentUpon>frmMain.vb</DependentUpon>
     </Compile>
@@ -169,6 +175,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equa.resx">
+      <DependentUpon>Equa.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Radio_Player_X10.ru.resx">
       <DependentUpon>Radio_Player_X10.vb</DependentUpon>

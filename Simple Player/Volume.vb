@@ -17,6 +17,10 @@
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Close()
+        Me.Hide()
+    End Sub
+
+    Private Sub HScrollBar1_Scroll(sender As Object, e As ScrollEventArgs) Handles HScrollBar1.Scroll
+       frmMain.AxWindowsMediaPlayer1.settings.balance = HScrollBar1.Value
     End Sub
 End Class

@@ -27,6 +27,8 @@ Partial Class Volume
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.HScrollBar1 = New System.Windows.Forms.HScrollBar()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.TrackBar1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
@@ -55,11 +57,24 @@ Partial Class Volume
         Me.Button1.Name = "Button1"
         Me.Button1.UseVisualStyleBackColor = true
         '
+        'HScrollBar1
+        '
+        resources.ApplyResources(Me.HScrollBar1, "HScrollBar1")
+        Me.HScrollBar1.Minimum = -100
+        Me.HScrollBar1.Name = "HScrollBar1"
+        '
+        'Label3
+        '
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.Name = "Label3"
+        '
         'Volume
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.HScrollBar1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -77,4 +92,6 @@ End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents HScrollBar1 As HScrollBar
+    Friend WithEvents Label3 As Label
 End Class
