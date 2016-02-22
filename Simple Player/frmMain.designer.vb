@@ -30,7 +30,6 @@ Partial Class frmMain
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -77,6 +76,9 @@ Partial Class frmMain
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
+        Me.VkAudio = New System.Windows.Forms.ToolStripMenuItem()
+        Me.АвторизацияToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.МоиАудиозаписиToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabPage1.SuspendLayout
         CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
@@ -93,7 +95,6 @@ Partial Class frmMain
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.White
-        Me.TabPage1.Controls.Add(Me.Button8)
         Me.TabPage1.Controls.Add(Me.Button7)
         Me.TabPage1.Controls.Add(Me.Button9)
         Me.TabPage1.Controls.Add(Me.TextBox1)
@@ -109,12 +110,6 @@ Partial Class frmMain
         resources.ApplyResources(Me.TabPage1, "TabPage1")
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.UseVisualStyleBackColor = true
-        '
-        'Button8
-        '
-        resources.ApplyResources(Me.Button8, "Button8")
-        Me.Button8.Name = "Button8"
-        Me.Button8.UseVisualStyleBackColor = true
         '
         'Button7
         '
@@ -224,7 +219,8 @@ Partial Class frmMain
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportDeleteToolStripMenuItem, Me.PlayerOptionsToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.MenuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportDeleteToolStripMenuItem, Me.VkAudio, Me.PlayerOptionsToolStripMenuItem, Me.HelpToolStripMenuItem})
         resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
         Me.MenuStrip1.Name = "MenuStrip1"
         '
@@ -405,6 +401,22 @@ Partial Class frmMain
         Me.VisualStyler1.ToolStripStyle = SkinSoft.VisualStyler.ToolStripRenderStyle.Professional
         Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Aqua).vssf")
         '
+        'VkAudio
+        '
+        Me.VkAudio.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.АвторизацияToolStripMenuItem, Me.МоиАудиозаписиToolStripMenuItem})
+        resources.ApplyResources(Me.VkAudio, "VkAudio")
+        Me.VkAudio.Name = "VkAudio"
+        '
+        'АвторизацияToolStripMenuItem
+        '
+        resources.ApplyResources(Me.АвторизацияToolStripMenuItem, "АвторизацияToolStripMenuItem")
+        Me.АвторизацияToolStripMenuItem.Name = "АвторизацияToolStripMenuItem"
+        '
+        'МоиАудиозаписиToolStripMenuItem
+        '
+        resources.ApplyResources(Me.МоиАудиозаписиToolStripMenuItem, "МоиАудиозаписиToolStripMenuItem")
+        Me.МоиАудиозаписиToolStripMenuItem.Name = "МоиАудиозаписиToolStripMenuItem"
+        '
         'frmMain
         '
         resources.ApplyResources(Me, "$this")
@@ -479,6 +491,8 @@ End Sub
     Friend WithEvents Button7 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents NotifyIcon1 As NotifyIcon
-    Friend WithEvents Button8 As Button
     Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
+    Friend WithEvents VkAudio As ToolStripMenuItem
+    Friend WithEvents АвторизацияToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents МоиАудиозаписиToolStripMenuItem As ToolStripMenuItem
 End Class

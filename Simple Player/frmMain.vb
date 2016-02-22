@@ -72,11 +72,11 @@ Public Class frmMain
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click 
-
+        'And
+           ' ListBox3.SelectedItem = AxWindowsMediaPlayer1.URL 
 
         If _
-            AxWindowsMediaPlayer1.playState = WMPPlayState.wmppsPaused And
-            ListBox3.SelectedItem = AxWindowsMediaPlayer1.URL Then
+            AxWindowsMediaPlayer1.playState = WMPPlayState.wmppsPaused Then
             AxWindowsMediaPlayer1.Ctlcontrols.play()
 
 
@@ -131,7 +131,7 @@ Public Class frmMain
 
     Private Sub AxWindowsMediaPlayer1_Buffering(sender As Object, e As _WMPOCXEvents_BufferingEvent) Handles AxWindowsMediaPlayer1.Buffering _
         
-        BackgroundWorker1.RunWorkerAsync()
+        'BackgroundWorker1.RunWorkerAsync()
     End Sub
 
     Private Sub AxWindowsMediaPlayer1_NewStream(sender As Object, e As EventArgs) Handles AxWindowsMediaPlayer1.NewStream _
@@ -572,9 +572,25 @@ End Sub
        
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-        Equa.Show()
+    Private Sub Button8_Click(sender As Object, e As EventArgs) 
+       
 
+    End Sub
+
+    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+
+    End Sub
+
+    Private Sub АвторизацияToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles АвторизацияToolStripMenuItem.Click
+         Equa.Show()
+    End Sub
+
+    Private Sub VkAudio_Click(sender As Object, e As EventArgs) Handles VkAudio.Click
+      
+    End Sub
+
+    Private Sub МоиАудиозаписиToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles МоиАудиозаписиToolStripMenuItem.Click
+        Vk.Show()
     End Sub
 End Class
 

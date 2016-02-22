@@ -53,5 +53,8 @@
     <Setting Name="Notify" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="loged" Type="System.String" Scope="User">
+      <Value Profile="(Default)">flase</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
