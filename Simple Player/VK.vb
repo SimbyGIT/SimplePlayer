@@ -4,9 +4,8 @@ Imports System.IO
 Imports System.ComponentModel
 
 Public Class VK
-
-
-    Dim music(0) As String
+    Public isRemote As Boolean
+    Public music(0) As String
     Function method(name As String, param As String) As String
         Dim m_url, ext As String
         If param = "" Then
@@ -25,6 +24,10 @@ Public Class VK
         reader.Close()
         Return ext
     End Function
+
+  
+
+  
 
     Private Sub VK_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim xml As New XmlDocument 'сюда мы будем грузить полученный XML
@@ -54,9 +57,16 @@ Public Class VK
         End If
     End Sub
 
-    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
-        frmMain.AxWindowsMediaPlayer1.URL = music(ListBox1.SelectedIndex + 1)
+    Private Sub ListBox1_DoubleClick(sender As Object, e As EventArgs) Handles ListBox1.DoubleClick
+
+                frmMain.AxWindowsMediaPlayer1.URL = music(ListBox1.SelectedIndex + 1)
         frmMain.AxWindowsMediaPlayer1.Ctlcontrols.play()
+        isRemote = True
+
+    End Sub
+
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -66,4 +76,7 @@ Public Class VK
     Private Sub VK_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
     End Sub
+
+
+
 End Class

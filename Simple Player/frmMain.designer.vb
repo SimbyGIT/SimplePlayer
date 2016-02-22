@@ -62,6 +62,9 @@ Partial Class frmMain
         Me.DeleteAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VkAudio = New System.Windows.Forms.ToolStripMenuItem()
+        Me.АвторизацияToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.МоиАудиозаписиToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PlayerOptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RadioPlayerX10ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -76,9 +79,7 @@ Partial Class frmMain
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
-        Me.VkAudio = New System.Windows.Forms.ToolStripMenuItem()
-        Me.АвторизацияToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.МоиАудиозаписиToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.TabPage1.SuspendLayout
         CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
@@ -95,6 +96,7 @@ Partial Class frmMain
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.White
+        Me.TabPage1.Controls.Add(Me.Button8)
         Me.TabPage1.Controls.Add(Me.Button7)
         Me.TabPage1.Controls.Add(Me.Button9)
         Me.TabPage1.Controls.Add(Me.TextBox1)
@@ -308,6 +310,22 @@ Partial Class frmMain
         resources.ApplyResources(Me.ExitToolStripMenuItem, "ExitToolStripMenuItem")
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         '
+        'VkAudio
+        '
+        Me.VkAudio.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.АвторизацияToolStripMenuItem, Me.МоиАудиозаписиToolStripMenuItem})
+        resources.ApplyResources(Me.VkAudio, "VkAudio")
+        Me.VkAudio.Name = "VkAudio"
+        '
+        'АвторизацияToolStripMenuItem
+        '
+        resources.ApplyResources(Me.АвторизацияToolStripMenuItem, "АвторизацияToolStripMenuItem")
+        Me.АвторизацияToolStripMenuItem.Name = "АвторизацияToolStripMenuItem"
+        '
+        'МоиАудиозаписиToolStripMenuItem
+        '
+        resources.ApplyResources(Me.МоиАудиозаписиToolStripMenuItem, "МоиАудиозаписиToolStripMenuItem")
+        Me.МоиАудиозаписиToolStripMenuItem.Name = "МоиАудиозаписиToolStripMenuItem"
+        '
         'PlayerOptionsToolStripMenuItem
         '
         Me.PlayerOptionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RadioPlayerX10ToolStripMenuItem})
@@ -359,6 +377,7 @@ Partial Class frmMain
         '
         'ListBox1
         '
+        Me.ListBox1.AllowDrop = true
         Me.ListBox1.BackColor = System.Drawing.Color.White
         Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         resources.ApplyResources(Me.ListBox1, "ListBox1")
@@ -401,21 +420,11 @@ Partial Class frmMain
         Me.VisualStyler1.ToolStripStyle = SkinSoft.VisualStyler.ToolStripRenderStyle.Professional
         Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Aqua).vssf")
         '
-        'VkAudio
+        'Button8
         '
-        Me.VkAudio.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.АвторизацияToolStripMenuItem, Me.МоиАудиозаписиToolStripMenuItem})
-        resources.ApplyResources(Me.VkAudio, "VkAudio")
-        Me.VkAudio.Name = "VkAudio"
-        '
-        'АвторизацияToolStripMenuItem
-        '
-        resources.ApplyResources(Me.АвторизацияToolStripMenuItem, "АвторизацияToolStripMenuItem")
-        Me.АвторизацияToolStripMenuItem.Name = "АвторизацияToolStripMenuItem"
-        '
-        'МоиАудиозаписиToolStripMenuItem
-        '
-        resources.ApplyResources(Me.МоиАудиозаписиToolStripMenuItem, "МоиАудиозаписиToolStripMenuItem")
-        Me.МоиАудиозаписиToolStripMenuItem.Name = "МоиАудиозаписиToolStripMenuItem"
+        resources.ApplyResources(Me.Button8, "Button8")
+        Me.Button8.Name = "Button8"
+        Me.Button8.UseVisualStyleBackColor = true
         '
         'frmMain
         '
@@ -491,8 +500,9 @@ End Sub
     Friend WithEvents Button7 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents NotifyIcon1 As NotifyIcon
-    Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
     Friend WithEvents VkAudio As ToolStripMenuItem
     Friend WithEvents АвторизацияToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents МоиАудиозаписиToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
+    Friend WithEvents Button8 As Button
 End Class

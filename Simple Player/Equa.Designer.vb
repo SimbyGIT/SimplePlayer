@@ -22,6 +22,7 @@ Partial Class Equa
     'Не изменяйте ее в редакторе исходного кода.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Equa))
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.SuspendLayout
         '
@@ -40,6 +41,7 @@ Partial Class Equa
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(638, 454)
         Me.Controls.Add(Me.WebBrowser1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Equa"
         Me.Text = "Автоизация"
         Me.ResumeLayout(false)

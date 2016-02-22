@@ -30,6 +30,7 @@ Partial Class VK
         '
         'ListBox1
         '
+        Me.ListBox1.AllowDrop = true
         Me.ListBox1.FormattingEnabled = true
         Me.ListBox1.Location = New System.Drawing.Point(10, 12)
         Me.ListBox1.Name = "ListBox1"
@@ -56,12 +57,17 @@ Partial Class VK
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = true
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(333, 285)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ListBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
+        Me.MaximizeBox = false
         Me.Name = "VK"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "Мои аудиозаписи - VK"
         Me.ResumeLayout(false)
         Me.PerformLayout

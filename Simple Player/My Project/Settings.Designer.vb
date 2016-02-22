@@ -260,13 +260,13 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("flase")>  _
-        Public Property loged() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+        Public Property remote() As Boolean
             Get
-                Return CType(Me("loged"),String)
+                Return CType(Me("remote"),Boolean)
             End Get
             Set
-                Me("loged") = value
+                Me("remote") = value
             End Set
         End Property
     End Class

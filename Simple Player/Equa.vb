@@ -5,7 +5,7 @@ Imports Microsoft.Win32
 Public Class Equa
     Public url, token, uid As String
 
-    Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
+    Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted 
         url = WebBrowser1.Url.ToString
         If url.Substring(1, 10) = "ttp://link" Then
             token = url.Substring(url.IndexOf("=") + 1, url.IndexOf("&") - url.IndexOf("=") - 1)
