@@ -77,6 +77,7 @@ Public Class VK
         Me.Hide()
     End Sub
 
-
-
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Download.Show()
+    End Sub
 End Class

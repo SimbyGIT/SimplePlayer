@@ -26,6 +26,7 @@ Partial Class VK
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.SuspendLayout
         '
         'ListBox1
@@ -34,7 +35,7 @@ Partial Class VK
         Me.ListBox1.FormattingEnabled = true
         Me.ListBox1.Location = New System.Drawing.Point(10, 12)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(311, 238)
+        Me.ListBox1.Size = New System.Drawing.Size(333, 238)
         Me.ListBox1.TabIndex = 1
         '
         'TextBox1
@@ -53,13 +54,25 @@ Partial Class VK
         Me.Button1.TabIndex = 3
         Me.Button1.UseVisualStyleBackColor = true
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = true
+        Me.LinkLabel1.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.LinkLabel1.Location = New System.Drawing.Point(295, 263)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(48, 13)
+        Me.LinkLabel1.TabIndex = 33
+        Me.LinkLabel1.TabStop = true
+        Me.LinkLabel1.Text = "Скачать"
+        '
         'VK
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = true
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(333, 285)
+        Me.ClientSize = New System.Drawing.Size(345, 283)
+        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ListBox1)
@@ -76,4 +89,5 @@ End Sub
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class
