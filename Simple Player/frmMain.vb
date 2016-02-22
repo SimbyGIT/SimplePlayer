@@ -56,7 +56,18 @@ Public Class frmMain
         Catch ex As Exception
 
             ' program the timer to read if repeat is turned on and then replay 
+            if VK.isRemote = true Then
+                     If CheckBox1.Checked = True Then
+                VK.ListBox1.SelectedIndex = "0"
+                AxWindowsMediaPlayer1.URL = VK.music(Vk.ListBox1.SelectedIndex +1)
 
+            Else
+                AxWindowsMediaPlayer1.URL = ""
+
+            End If
+
+                Else 
+            
             If CheckBox1.Checked = True Then
                 ListBox1.SelectedIndex = "0"
                 ListBox3.SelectedIndex = ListBox1.SelectedIndex
@@ -66,6 +77,7 @@ Public Class frmMain
                 AxWindowsMediaPlayer1.URL = ""
 
             End If
+                End If
         End Try
 
         Try
@@ -89,8 +101,19 @@ Public Class frmMain
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        'And
-        ' ListBox3.SelectedItem = AxWindowsMediaPlayer1.URL 
+
+        if Vk.isRemote = true Then
+             If _
+            AxWindowsMediaPlayer1.playState = WMPPlayState.wmppsPaused Then
+            AxWindowsMediaPlayer1.Ctlcontrols.play()
+
+
+        Else
+            AxWindowsMediaPlayer1.URL = vk.music(vk.ListBox1.SelectedIndex+1)
+            Timer1.Start()
+        End If
+
+            Else 
 
         If _
             AxWindowsMediaPlayer1.playState = WMPPlayState.wmppsPaused Then
@@ -101,6 +124,7 @@ Public Class frmMain
             ListBox3.SelectedIndex = ListBox1.SelectedIndex
             AxWindowsMediaPlayer1.URL = ListBox3.SelectedItem
             Timer1.Start()
+        End If
         End If
     End Sub
 
