@@ -674,5 +674,10 @@ Else
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         Download.Show()
     End Sub
+
+    Private Sub Sort_Click(sender As Object, e As EventArgs) Handles Sort.Click
+        ListBox1.Sorted = true
+        ListBox3.Sorted = True
+    End Sub
 End Class
 

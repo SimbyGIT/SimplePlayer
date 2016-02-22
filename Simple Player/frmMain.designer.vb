@@ -80,6 +80,7 @@ Partial Class frmMain
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
+        Me.Sort = New System.Windows.Forms.Button()
         Me.TabPage1.SuspendLayout
         CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
@@ -373,6 +374,7 @@ Partial Class frmMain
         '
         'GroupBox5
         '
+        Me.GroupBox5.Controls.Add(Me.Sort)
         Me.GroupBox5.Controls.Add(Me.ListBox1)
         Me.GroupBox5.Controls.Add(Me.ListBox3)
         Me.GroupBox5.Controls.Add(Me.ListBox4)
@@ -425,6 +427,13 @@ Partial Class frmMain
         Me.VisualStyler1.ShadowStyle = SkinSoft.VisualStyler.ShadowStyle.Bold
         Me.VisualStyler1.ToolStripStyle = SkinSoft.VisualStyler.ToolStripRenderStyle.Professional
         Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Aqua).vssf")
+        '
+        'Sort
+        '
+        Me.Sort.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Sort, "Sort")
+        Me.Sort.Name = "Sort"
+        Me.Sort.UseVisualStyleBackColor = false
         '
         'frmMain
         '
@@ -505,4 +514,5 @@ End Sub
     Friend WithEvents МоиАудиозаписиToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Sort As Button
 End Class
