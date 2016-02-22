@@ -269,6 +269,18 @@ Namespace My
                 Me("remote") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\Users\SimbyOS\Music")>  _
+        Public Property dir() As String
+            Get
+                Return CType(Me("dir"),String)
+            End Get
+            Set
+                Me("dir") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

@@ -21,6 +21,7 @@ Public Class Settings
             Else 
              CheckBox1.Checked =False
             End If
+        TextBox1.Text = My.Settings.dir
     End Sub
 
     Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
@@ -57,5 +58,10 @@ Public Class Settings
             Else 
             My.Settings.Notify = False
         End If
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click 
+If FBD1.ShowDialog = DialogResult.OK Then My.Settings.dir = FBD1.SelectedPath 
+        TextBox1.Text = My.Settings.dir
     End Sub
 End Class

@@ -35,6 +35,10 @@ Partial Class Settings
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.FBD1 = New System.Windows.Forms.FolderBrowserDialog()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TabControl1.SuspendLayout
         Me.TabPage2.SuspendLayout
         Me.GroupBox7.SuspendLayout
@@ -79,6 +83,9 @@ Partial Class Settings
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.TextBox1)
+        Me.TabPage1.Controls.Add(Me.Label2)
+        Me.TabPage1.Controls.Add(Me.Button3)
         Me.TabPage1.Controls.Add(Me.CheckBox2)
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Controls.Add(Me.HScrollBar1)
@@ -126,6 +133,22 @@ Partial Class Settings
         Me.Button1.Name = "Button1"
         Me.Button1.UseVisualStyleBackColor = true
         '
+        'Button3
+        '
+        resources.ApplyResources(Me.Button3, "Button3")
+        Me.Button3.Name = "Button3"
+        Me.Button3.UseVisualStyleBackColor = true
+        '
+        'Label2
+        '
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Name = "Label2"
+        '
+        'TextBox1
+        '
+        resources.ApplyResources(Me.TextBox1, "TextBox1")
+        Me.TextBox1.Name = "TextBox1"
+        '
         'Settings
         '
         resources.ApplyResources(Me, "$this")
@@ -157,4 +180,8 @@ End Sub
     Friend WithEvents GroupBox7 As GroupBox
     Friend WithEvents Button8 As Button
     Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents FBD1 As FolderBrowserDialog
+    Friend WithEvents TextBox1 As TextBox
 End Class

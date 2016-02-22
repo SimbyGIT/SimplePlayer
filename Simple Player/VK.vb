@@ -36,7 +36,7 @@ Public Class VK
         Dim i As Integer
         While xml.DocumentElement.HasChildNodes 'пока остаются песни в дереве
             node = xml.DocumentElement.FirstChild 'копируем ветку с одной песней
-            ListBox1.Items.Add(node.Item("artist").InnerXml & " | " & node.Item("title").InnerXml) 'добавляем элемент в listbox
+            ListBox1.Items.Add(node.Item("artist").InnerXml & " - " & node.Item("title").InnerXml) 'добавляем элемент в listbox
             i = i + 1
             ReDim Preserve music(music.Length)
             music(music.Length - 1) = node.Item("url").InnerXml 'добавляем урл в массив

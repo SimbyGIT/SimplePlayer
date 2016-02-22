@@ -120,6 +120,12 @@
     <Compile Include="Create_or_Save_Playlist.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Download.Designer.vb">
+      <DependentUpon>Download.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Download.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Edit_Playlists.Designer.vb">
       <DependentUpon>Edit_Playlists.vb</DependentUpon>
     </Compile>
@@ -183,6 +189,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Download.resx">
+      <DependentUpon>Download.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Equa.resx">
       <DependentUpon>Equa.vb</DependentUpon>

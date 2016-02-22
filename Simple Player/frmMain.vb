@@ -14,6 +14,7 @@ Public Class frmMain
 
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+                Download.Label2.Text = vk.ListBox1.SelectedItem
 
         
         Try
@@ -158,9 +159,9 @@ Public Class frmMain
         End Try
 
         If ListBox1.Items.Count <= 1 Then
-            Button2.Visible = False
+            Button2.Enabled = False
         Else
-            Button2.Visible = True
+            Button2.Enabled = True
 
 
         End If
@@ -270,6 +271,12 @@ Public Class frmMain
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+                If ListBox1.Items.Count <= 1 Then
+                
+            Else 
+           
+
+
         if VK.isRemote = True Then
             Timer1.Stop()
             AxWindowsMediaPlayer1.URL = ""
@@ -303,6 +310,7 @@ Else
                
         End Try
             end If
+             end If
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
@@ -326,13 +334,13 @@ Else
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Opacity = My.Settings.Opacity
+        
         If My.Settings.Skin = True then
             VisualStyler.RestoreApplicationSkin()
         Else
             VisualStyler.RemoveApplicationSkin()
 
         End If
-        Button2.Visible = False
 
         Try
 
@@ -661,6 +669,10 @@ Else
        
          TextBox1.Text = AxWindowsMediaPlayer1.status
         
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Download.Show()
     End Sub
 End Class
 

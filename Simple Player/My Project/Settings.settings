@@ -56,5 +56,8 @@
     <Setting Name="remote" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="dir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\SimbyOS\Music</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

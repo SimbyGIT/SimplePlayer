@@ -80,6 +80,7 @@ Partial Class frmMain
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.TabPage1.SuspendLayout
         CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
@@ -96,6 +97,7 @@ Partial Class frmMain
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.White
+        Me.TabPage1.Controls.Add(Me.LinkLabel1)
         Me.TabPage1.Controls.Add(Me.Button8)
         Me.TabPage1.Controls.Add(Me.Button7)
         Me.TabPage1.Controls.Add(Me.Button9)
@@ -426,6 +428,12 @@ Partial Class frmMain
         Me.Button8.Name = "Button8"
         Me.Button8.UseVisualStyleBackColor = true
         '
+        'LinkLabel1
+        '
+        resources.ApplyResources(Me.LinkLabel1, "LinkLabel1")
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.TabStop = true
+        '
         'frmMain
         '
         resources.ApplyResources(Me, "$this")
@@ -505,4 +513,5 @@ End Sub
     Friend WithEvents МоиАудиозаписиToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
     Friend WithEvents Button8 As Button
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class
