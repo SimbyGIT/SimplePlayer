@@ -270,7 +270,12 @@ Public Class frmMain
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If ListBox1.Items.Count <= 1 Then
-
+            if VK.isRemote = True Then
+                Timer1.Stop()
+                AxWindowsMediaPlayer1.URL = ""
+                VK.ListBox1.SelectedIndex = vk.ListBox1.SelectedIndex + 1
+                AxWindowsMediaPlayer1.URL = VK.music(vk.ListBox1.SelectedIndex + 1)
+                End If
         Else
 
 
