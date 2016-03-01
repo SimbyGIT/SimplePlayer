@@ -74,13 +74,14 @@ Partial Class frmMain
         Me.ToolStripSeparator19 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Sort = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.ListBox3 = New System.Windows.Forms.ListBox()
         Me.ListBox4 = New System.Windows.Forms.ListBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
-        Me.Sort = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.TabPage1.SuspendLayout
         CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
@@ -97,6 +98,7 @@ Partial Class frmMain
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.White
+        Me.TabPage1.Controls.Add(Me.Button8)
         Me.TabPage1.Controls.Add(Me.LinkLabel1)
         Me.TabPage1.Controls.Add(Me.Button7)
         Me.TabPage1.Controls.Add(Me.Button9)
@@ -383,6 +385,13 @@ Partial Class frmMain
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.TabStop = false
         '
+        'Sort
+        '
+        Me.Sort.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Sort, "Sort")
+        Me.Sort.Name = "Sort"
+        Me.Sort.UseVisualStyleBackColor = false
+        '
         'ListBox1
         '
         Me.ListBox1.AllowDrop = true
@@ -428,12 +437,11 @@ Partial Class frmMain
         Me.VisualStyler1.ToolStripStyle = SkinSoft.VisualStyler.ToolStripRenderStyle.Professional
         Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Aqua).vssf")
         '
-        'Sort
+        'Button8
         '
-        Me.Sort.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Sort, "Sort")
-        Me.Sort.Name = "Sort"
-        Me.Sort.UseVisualStyleBackColor = false
+        resources.ApplyResources(Me.Button8, "Button8")
+        Me.Button8.Name = "Button8"
+        Me.Button8.UseVisualStyleBackColor = true
         '
         'frmMain
         '
@@ -515,4 +523,5 @@ End Sub
     Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Sort As Button
+    Friend WithEvents Button8 As Button
 End Class

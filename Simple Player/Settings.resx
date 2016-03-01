@@ -143,6 +143,46 @@
   <data name="&gt;&gt;Button4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="Button8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 19</value>
+  </data>
+  <data name="Button8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 23</value>
+  </data>
+  <data name="Button8.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Button8.Text" xml:space="preserve">
+    <value>Edit Playlists</value>
+  </data>
+  <data name="&gt;&gt;Button8.Name" xml:space="preserve">
+    <value>Button8</value>
+  </data>
+  <data name="&gt;&gt;Button8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button8.Parent" xml:space="preserve">
+    <value>GroupBox7</value>
+  </data>
+  <data name="&gt;&gt;Button8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GroupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 15</value>
+  </data>
+  <data name="GroupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 294</value>
+  </data>
+  <data name="GroupBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="GroupBox7.Text" xml:space="preserve">
+    <value>Playlist Options</value>
+  </data>
   <data name="&gt;&gt;GroupBox7.Name" xml:space="preserve">
     <value>GroupBox7</value>
   </data>
@@ -305,7 +345,6 @@
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="HScrollBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>On</value>
   </data>
@@ -458,69 +497,6 @@
   </data>
   <data name="&gt;&gt;TabControl1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;Button8.Name" xml:space="preserve">
-    <value>Button8</value>
-  </data>
-  <data name="&gt;&gt;Button8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Button8.Parent" xml:space="preserve">
-    <value>GroupBox7</value>
-  </data>
-  <data name="&gt;&gt;Button8.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="GroupBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 15</value>
-  </data>
-  <data name="GroupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 294</value>
-  </data>
-  <data name="GroupBox7.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="GroupBox7.Text" xml:space="preserve">
-    <value>Playlist Options</value>
-  </data>
-  <data name="&gt;&gt;GroupBox7.Name" xml:space="preserve">
-    <value>GroupBox7</value>
-  </data>
-  <data name="&gt;&gt;GroupBox7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupBox7.Parent" xml:space="preserve">
-    <value>TabPage2</value>
-  </data>
-  <data name="&gt;&gt;GroupBox7.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>On</value>
-  </data>
-  <data name="Button8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 19</value>
-  </data>
-  <data name="Button8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 23</value>
-  </data>
-  <data name="Button8.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Button8.Text" xml:space="preserve">
-    <value>Edit Playlists</value>
-  </data>
-  <data name="&gt;&gt;Button8.Name" xml:space="preserve">
-    <value>Button8</value>
-  </data>
-  <data name="&gt;&gt;Button8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Button8.Parent" xml:space="preserve">
-    <value>GroupBox7</value>
-  </data>
-  <data name="&gt;&gt;Button8.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="FBD1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
