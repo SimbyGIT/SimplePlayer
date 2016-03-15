@@ -100,9 +100,7 @@ Public Class frmMain
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        
 
-     
         if Vk.isRemote = true Then
             If _
                 AxWindowsMediaPlayer1.playState = WMPPlayState.wmppsPaused Then
@@ -673,13 +671,6 @@ Public Class frmMain
     Private Sub Sort_Click(sender As Object, e As EventArgs) Handles Sort.Click
         ListBox1.Sorted = true
         ListBox3.Sorted = True
-    End Sub
-
-    Private Sub Button8_Click_2(sender As Object, e As EventArgs) Handles Button8.Click
-        Video.Show()
-        Video.AxWindowsMediaPlayer1.URL = "C:\1.webm"
-       
-
     End Sub
 End Class
 
