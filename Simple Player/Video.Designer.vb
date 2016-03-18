@@ -43,6 +43,7 @@ Partial Class Video
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.AxWindowsMediaPlayer1)
+        Me.Enabled = False
         Me.Name = "Video"
         Me.Text = "Video"
         CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).EndInit
@@ -50,5 +51,5 @@ Partial Class Video
 
 End Sub
 
-    Friend WithEvents AxWindowsMediaPlayer1 As AxWMPLib.AxWindowsMediaPlayer
+    Public WithEvents AxWindowsMediaPlayer1 As AxWMPLib.AxWindowsMediaPlayer
 End Class

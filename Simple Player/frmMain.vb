@@ -100,17 +100,17 @@ Public Class frmMain
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        
 
-     
-        if Vk.isRemote = true Then
+
+
+        If VK.isRemote = True Then
             If _
                 AxWindowsMediaPlayer1.playState = WMPPlayState.wmppsPaused Then
                 AxWindowsMediaPlayer1.Ctlcontrols.play()
 
 
             Else
-                AxWindowsMediaPlayer1.URL = vk.music(vk.ListBox1.SelectedIndex + 1)
+                AxWindowsMediaPlayer1.URL = VK.music(VK.ListBox1.SelectedIndex + 1)
                 Timer1.Start()
             End If
 
@@ -131,8 +131,7 @@ Public Class frmMain
 
     Private Sub ImportASongToolStripMenuItem_Click(sender As Object, e As EventArgs) _
         Handles ImportASongToolStripMenuItem.Click
-        OpenFileDialog1.Filter =
-            "Аудиофайлы(.wav,*.mp3,*.mpeg,*.snd,*.au,*.aif,*.aifc,*.aiff,*.wma)|*.wav;*.mp3;*.mpeg;*.m4a;*.snd;*.au;*.aif;*.aifc;*.aiff;*.wma"
+
         OpenFileDialog1.FileName = ""
 
 
@@ -146,7 +145,6 @@ Public Class frmMain
                     ListBox1.Items.Add(s)
                 Next
                 For Each s As String In OpenFileDialog1.FileNames
-
                     ListBox3.Items.Add(s)
                 Next
                 Me.ListBox1.SelectedIndex = Me.ListBox1.SelectedIndex + 1
@@ -246,7 +244,7 @@ Public Class frmMain
                 ListBox3.SelectedIndex = ListBox1.SelectedIndex
                 AxWindowsMediaPlayer1.URL = ListBox3.SelectedItem
 
-                If ListBox1.SelectedIndex = - 1 Then
+                If ListBox1.SelectedIndex = -1 Then
                     Timer1.Stop()
                     AxWindowsMediaPlayer1.URL = ""
                     Me.ListBox1.SelectedIndex = ListBox1.SelectedIndex = 1
@@ -272,20 +270,20 @@ Public Class frmMain
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If ListBox1.Items.Count <= 1 Then
-            if VK.isRemote = True Then
+            If VK.isRemote = True Then
                 Timer1.Stop()
                 AxWindowsMediaPlayer1.URL = ""
-                VK.ListBox1.SelectedIndex = vk.ListBox1.SelectedIndex + 1
-                AxWindowsMediaPlayer1.URL = VK.music(vk.ListBox1.SelectedIndex + 1)
-                End If
+                VK.ListBox1.SelectedIndex = VK.ListBox1.SelectedIndex + 1
+                AxWindowsMediaPlayer1.URL = VK.music(VK.ListBox1.SelectedIndex + 1)
+            End If
         Else
 
 
-            if VK.isRemote = True Then
+            If VK.isRemote = True Then
                 Timer1.Stop()
                 AxWindowsMediaPlayer1.URL = ""
-                VK.ListBox1.SelectedIndex = vk.ListBox1.SelectedIndex + 1
-                AxWindowsMediaPlayer1.URL = VK.music(vk.ListBox1.SelectedIndex + 1)
+                VK.ListBox1.SelectedIndex = VK.ListBox1.SelectedIndex + 1
+                AxWindowsMediaPlayer1.URL = VK.music(VK.ListBox1.SelectedIndex + 1)
 
             Else
 
@@ -313,8 +311,8 @@ Public Class frmMain
                     End If
 
                 End Try
-            end If
-        end If
+            End If
+        End If
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
@@ -326,9 +324,9 @@ Public Class frmMain
 
     Private Sub FindMyString(searchString As String)
         If searchString <> String.Empty Then
-            Dim index As Integer = listBox1.FindString(searchString)
-            If index <> - 1 Then
-                listBox1.SetSelected(index, True)
+            Dim index As Integer = ListBox1.FindString(searchString)
+            If index <> -1 Then
+                ListBox1.SetSelected(index, True)
             Else
                 MessageBox.Show("Нет совпадений")
             End If
@@ -338,7 +336,7 @@ Public Class frmMain
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Opacity = My.Settings.Opacity
 
-        If My.Settings.Skin = True then
+        If My.Settings.Skin = True Then
             VisualStyler.RestoreApplicationSkin()
         Else
             VisualStyler.RemoveApplicationSkin()
@@ -407,9 +405,20 @@ Public Class frmMain
     End Sub
 
     Private Sub ListBox1_DoubleClick(sender As Object, e As EventArgs) Handles ListBox1.DoubleClick
+        Dim searchString As String
+        searchString = ListBox1.SelectedItem
 
-        Button5.PerformClick()
-        VK.isRemote = False
+        If (searchString.Contains(".mp4")) Or searchString.Contains(".avi") Then
+            AxWindowsMediaPlayer1.Ctlcontrols.pause()
+            Video.Show()
+            ListBox3.SelectedIndex = ListBox1.SelectedIndex
+            Video.AxWindowsMediaPlayer1.URL = ListBox3.SelectedItem
+            Video.AxWindowsMediaPlayer1.Ctlcontrols.play()
+
+        Else
+            Button5.PerformClick()
+            VK.isRemote = False
+        End If
     End Sub
 
     Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
@@ -489,10 +498,10 @@ Public Class frmMain
 
     Public Sub NotifyBaloon()
 
-        notifyIcon1.BalloonTipTitle = "Simple Player"
-        notifyIcon1.BalloonTipText = "Сейчас играет: " + Label2.Text
-        notifyIcon1.Visible = True
-        notifyIcon1.ShowBalloonTip(3000)
+        NotifyIcon1.BalloonTipTitle = "Simple Player"
+        NotifyIcon1.BalloonTipText = "Сейчас играет: " + Label2.Text
+        NotifyIcon1.Visible = True
+        NotifyIcon1.ShowBalloonTip(3000)
     End Sub
 
     Private Sub Playlist1ToolStripMenuItem_Click(sender As Object, e As EventArgs) _
@@ -502,13 +511,13 @@ Public Class frmMain
             ListBox3.Items.Clear()
             Button3.PerformClick()
             Dim r As New StreamReader("C:\ProgramData\Simple Player\Playlists\Playlist1Contents.txt")
-            While (r.Peek() > - 1)
+            While (r.Peek() > -1)
                 ListBox3.Items.Add(r.ReadLine)
             End While
             r.Close()
 
             Dim a As New StreamReader("C:\ProgramData\Simple Player\Playlists\Playlist1SafeFileNames.txt")
-            While (a.Peek() > - 1)
+            While (a.Peek() > -1)
                 ListBox1.Items.Add(a.ReadLine)
             End While
             a.Close()
@@ -525,13 +534,13 @@ Public Class frmMain
             ListBox3.Items.Clear()
             Button3.PerformClick()
             Dim r As New StreamReader("C:\ProgramData\Simple Player\Playlists\Playlist2Contents.txt")
-            While (r.Peek() > - 1)
+            While (r.Peek() > -1)
                 ListBox3.Items.Add(r.ReadLine)
             End While
             r.Close()
 
             Dim a As New StreamReader("C:\ProgramData\Simple Player\Playlists\Playlist2SafeFileNames.txt")
-            While (a.Peek() > - 1)
+            While (a.Peek() > -1)
                 ListBox1.Items.Add(a.ReadLine)
             End While
             a.Close()
@@ -548,13 +557,13 @@ Public Class frmMain
             ListBox3.Items.Clear()
             Button3.PerformClick()
             Dim r As New StreamReader("C:\ProgramData\Simple Player\Playlists\Playlist3Contents.txt")
-            While (r.Peek() > - 1)
+            While (r.Peek() > -1)
                 ListBox3.Items.Add(r.ReadLine)
             End While
             r.Close()
 
             Dim a As New StreamReader("C:\ProgramData\Simple Player\Playlists\Playlist3SafeFileNames.txt")
-            While (a.Peek() > - 1)
+            While (a.Peek() > -1)
                 ListBox1.Items.Add(a.ReadLine)
             End While
             a.Close()
@@ -571,13 +580,13 @@ Public Class frmMain
             ListBox3.Items.Clear()
             Button3.PerformClick()
             Dim r As New StreamReader("C:\ProgramData\Simple Player\Playlists\Playlist4Contents.txt")
-            While (r.Peek() > - 1)
+            While (r.Peek() > -1)
                 ListBox3.Items.Add(r.ReadLine)
             End While
             r.Close()
 
             Dim a As New StreamReader("C:\ProgramData\Simple Player\Playlists\Playlist4SafeFileNames.txt")
-            While (a.Peek() > - 1)
+            While (a.Peek() > -1)
                 ListBox1.Items.Add(a.ReadLine)
             End While
             a.Close()
@@ -624,7 +633,7 @@ Public Class frmMain
     End Sub
 
     Private Sub Label2_TextChanged(sender As Object, e As EventArgs) Handles Label2.TextChanged
-        If My.Settings.Notify = True then
+        If My.Settings.Notify = True Then
             NotifyBaloon()
         End If
     End Sub
@@ -646,7 +655,7 @@ Public Class frmMain
 
     Private Sub МоиАудиозаписиToolStripMenuItem_Click(sender As Object, e As EventArgs) _
         Handles МоиАудиозаписиToolStripMenuItem.Click
-        Vk.Show()
+        VK.Show()
     End Sub
 
     Private Sub frmMain_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
@@ -671,14 +680,22 @@ Public Class frmMain
     End Sub
 
     Private Sub Sort_Click(sender As Object, e As EventArgs) Handles Sort.Click
-        ListBox1.Sorted = true
+        ListBox1.Sorted = True
         ListBox3.Sorted = True
     End Sub
 
     Private Sub Button8_Click_2(sender As Object, e As EventArgs) Handles Button8.Click
         Video.Show()
         Video.AxWindowsMediaPlayer1.URL = "C:\1.webm"
-       
+
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub ListBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox3.SelectedIndexChanged
 
     End Sub
 End Class

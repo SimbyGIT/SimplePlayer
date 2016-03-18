@@ -30,6 +30,7 @@ Partial Class frmMain
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
@@ -81,16 +82,15 @@ Partial Class frmMain
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.TabPage1.SuspendLayout
-        CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.GroupBox1.SuspendLayout
-        CType(Me.TrackBar1,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.MenuStrip1.SuspendLayout
-        Me.GroupBox5.SuspendLayout
-        Me.TabControl1.SuspendLayout
-        CType(Me.VisualStyler1,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        Me.TabPage1.SuspendLayout()
+        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
+        CType(Me.VisualStyler1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'Timer1
         '
@@ -114,25 +114,31 @@ Partial Class frmMain
         Me.TabPage1.ForeColor = System.Drawing.Color.Black
         resources.ApplyResources(Me.TabPage1, "TabPage1")
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.UseVisualStyleBackColor = true
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        resources.ApplyResources(Me.Button8, "Button8")
+        Me.Button8.Name = "Button8"
+        Me.Button8.UseVisualStyleBackColor = True
         '
         'LinkLabel1
         '
         resources.ApplyResources(Me.LinkLabel1, "LinkLabel1")
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.TabStop = true
+        Me.LinkLabel1.TabStop = True
         '
         'Button7
         '
         resources.ApplyResources(Me.Button7, "Button7")
         Me.Button7.Name = "Button7"
-        Me.Button7.UseVisualStyleBackColor = true
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'Button9
         '
         resources.ApplyResources(Me.Button9, "Button9")
         Me.Button9.Name = "Button9"
-        Me.Button9.UseVisualStyleBackColor = true
+        Me.Button9.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
@@ -145,19 +151,19 @@ Partial Class frmMain
         resources.ApplyResources(Me.CheckBox1, "CheckBox1")
         Me.CheckBox1.ForeColor = System.Drawing.Color.Black
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.UseVisualStyleBackColor = true
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Button6
         '
         resources.ApplyResources(Me.Button6, "Button6")
         Me.Button6.Name = "Button6"
-        Me.Button6.UseVisualStyleBackColor = true
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'AxWindowsMediaPlayer1
         '
         resources.ApplyResources(Me.AxWindowsMediaPlayer1, "AxWindowsMediaPlayer1")
         Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
-        Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"),System.Windows.Forms.AxHost.State)
+        Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
         '
         'Label2
         '
@@ -183,7 +189,7 @@ Partial Class frmMain
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         resources.ApplyResources(Me.GroupBox1, "GroupBox1")
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.TabStop = false
+        Me.GroupBox1.TabStop = False
         '
         'Label3
         '
@@ -196,31 +202,31 @@ Partial Class frmMain
         '
         resources.ApplyResources(Me.Button5, "Button5")
         Me.Button5.Name = "Button5"
-        Me.Button5.UseVisualStyleBackColor = true
+        Me.Button5.UseVisualStyleBackColor = True
         '
         'Button4
         '
         resources.ApplyResources(Me.Button4, "Button4")
         Me.Button4.Name = "Button4"
-        Me.Button4.UseVisualStyleBackColor = true
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
         resources.ApplyResources(Me.Button3, "Button3")
         Me.Button3.Name = "Button3"
-        Me.Button3.UseVisualStyleBackColor = true
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
         resources.ApplyResources(Me.Button2, "Button2")
         Me.Button2.Name = "Button2"
-        Me.Button2.UseVisualStyleBackColor = true
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
         resources.ApplyResources(Me.Button1, "Button1")
         Me.Button1.Name = "Button1"
-        Me.Button1.UseVisualStyleBackColor = true
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'TrackBar1
         '
@@ -383,28 +389,28 @@ Partial Class frmMain
         Me.GroupBox5.ForeColor = System.Drawing.Color.White
         resources.ApplyResources(Me.GroupBox5, "GroupBox5")
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.TabStop = false
+        Me.GroupBox5.TabStop = False
         '
         'Sort
         '
         Me.Sort.BackColor = System.Drawing.Color.Transparent
         resources.ApplyResources(Me.Sort, "Sort")
         Me.Sort.Name = "Sort"
-        Me.Sort.UseVisualStyleBackColor = false
+        Me.Sort.UseVisualStyleBackColor = False
         '
         'ListBox1
         '
-        Me.ListBox1.AllowDrop = true
+        Me.ListBox1.AllowDrop = True
         Me.ListBox1.BackColor = System.Drawing.Color.White
         Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         resources.ApplyResources(Me.ListBox1, "ListBox1")
         Me.ListBox1.ForeColor = System.Drawing.Color.Black
-        Me.ListBox1.FormattingEnabled = true
+        Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.Name = "ListBox1"
         '
         'ListBox3
         '
-        Me.ListBox3.FormattingEnabled = true
+        Me.ListBox3.FormattingEnabled = True
         resources.ApplyResources(Me.ListBox3, "ListBox3")
         Me.ListBox3.Name = "ListBox3"
         '
@@ -412,7 +418,7 @@ Partial Class frmMain
         '
         Me.ListBox4.BackColor = System.Drawing.Color.Black
         Me.ListBox4.ForeColor = System.Drawing.Color.White
-        Me.ListBox4.FormattingEnabled = true
+        Me.ListBox4.FormattingEnabled = True
         resources.ApplyResources(Me.ListBox4, "ListBox4")
         Me.ListBox4.Name = "ListBox4"
         '
@@ -430,18 +436,10 @@ Partial Class frmMain
         '
         'VisualStyler1
         '
-        Me.VisualStyler1.HookVisualStyles = true
+        Me.VisualStyler1.HookVisualStyles = True
         Me.VisualStyler1.HostForm = Me
-        Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"),SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
         Me.VisualStyler1.ShadowStyle = SkinSoft.VisualStyler.ShadowStyle.Bold
         Me.VisualStyler1.ToolStripStyle = SkinSoft.VisualStyler.ToolStripRenderStyle.Professional
-        Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Aqua).vssf")
-        '
-        'Button8
-        '
-        resources.ApplyResources(Me.Button8, "Button8")
-        Me.Button8.Name = "Button8"
-        Me.Button8.UseVisualStyleBackColor = true
         '
         'frmMain
         '
@@ -520,8 +518,8 @@ End Sub
     Friend WithEvents VkAudio As ToolStripMenuItem
     Friend WithEvents АвторизацияToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents МоиАудиозаписиToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Sort As Button
     Friend WithEvents Button8 As Button
+    Private WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
 End Class
