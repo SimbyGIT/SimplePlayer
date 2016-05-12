@@ -684,7 +684,7 @@ Public Class frmMain
         ListBox3.Sorted = True
     End Sub
 
-    Private Sub Button8_Click_2(sender As Object, e As EventArgs) Handles Button8.Click
+    Private Sub Button8_Click_2(sender As Object, e As EventArgs) 
         Video.Show()
         Video.AxWindowsMediaPlayer1.URL = "C:\1.webm"
 
