@@ -17,7 +17,7 @@ Public Class Download
 
     Private Sub wc_DownloadProgressChanged(sender As Object, e As DownloadProgressChangedEventArgs) _
         Handles wc.DownloadProgressChanged
-        Label3.Text = e.ProgressPercentage
+        Label3.Text = s.ProgressPercentage
         ProgressBar1.Value = e 'Показываем прогресс скачивания
     End Sub
 
