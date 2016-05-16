@@ -80,8 +80,6 @@ Partial Class frmMain
         Me.ListBox4 = New System.Windows.Forms.ListBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
-        Me.Button8 = New System.Windows.Forms.Button()
         Me.TabPage1.SuspendLayout
         CType(Me.AxWindowsMediaPlayer1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
@@ -89,7 +87,6 @@ Partial Class frmMain
         Me.MenuStrip1.SuspendLayout
         Me.GroupBox5.SuspendLayout
         Me.TabControl1.SuspendLayout
-        CType(Me.VisualStyler1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
         'Timer1
@@ -98,7 +95,6 @@ Partial Class frmMain
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.White
-        Me.TabPage1.Controls.Add(Me.Button8)
         Me.TabPage1.Controls.Add(Me.LinkLabel1)
         Me.TabPage1.Controls.Add(Me.Button7)
         Me.TabPage1.Controls.Add(Me.Button9)
@@ -428,21 +424,6 @@ Partial Class frmMain
         Me.NotifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
         resources.ApplyResources(Me.NotifyIcon1, "NotifyIcon1")
         '
-        'VisualStyler1
-        '
-        Me.VisualStyler1.HookVisualStyles = true
-        Me.VisualStyler1.HostForm = Me
-        Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"),SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
-        Me.VisualStyler1.ShadowStyle = SkinSoft.VisualStyler.ShadowStyle.Bold
-        Me.VisualStyler1.ToolStripStyle = SkinSoft.VisualStyler.ToolStripRenderStyle.Professional
-        Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Aqua).vssf")
-        '
-        'Button8
-        '
-        resources.ApplyResources(Me.Button8, "Button8")
-        Me.Button8.Name = "Button8"
-        Me.Button8.UseVisualStyleBackColor = true
-        '
         'frmMain
         '
         resources.ApplyResources(Me, "$this")
@@ -462,7 +443,6 @@ Partial Class frmMain
         Me.MenuStrip1.PerformLayout
         Me.GroupBox5.ResumeLayout(false)
         Me.TabControl1.ResumeLayout(false)
-        CType(Me.VisualStyler1,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
 
 End Sub
@@ -520,8 +500,6 @@ End Sub
     Friend WithEvents VkAudio As ToolStripMenuItem
     Friend WithEvents АвторизацияToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents МоиАудиозаписиToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Sort As Button
-    Friend WithEvents Button8 As Button
 End Class
